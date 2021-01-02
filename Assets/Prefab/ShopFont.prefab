@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1391964802441686}
+  m_IsPrefabParent: 1
+--- !u!1 &1391964802441686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4804716034552119}
+  - component: {fileID: 33242078194278158}
+  - component: {fileID: 23632250127169620}
+  - component: {fileID: 114153904816749048}
+  - component: {fileID: 114380007298872540}
+  m_Layer: 0
+  m_Name: ShopFont
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4804716034552119
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391964802441686}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.47409, y: 4.510474, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33242078194278158
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391964802441686}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23632250127169620
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391964802441686}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 9edf03d7c3ebf98a40b609f43737cca1, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114153904816749048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391964802441686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac33d3deec056280496ee4d4fbec6a29, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_id: 9fe83020-14f6-4ac4-8b23-fe20fd43758a
+  m_scaleX: 1
+  m_scaleY: 1
+  m_pivotX: 0
+  m_pivotY: 0
+  m_updateCollider: 1
+--- !u!114 &114380007298872540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1391964802441686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb628f953f50d8341b45e11c5e2735d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_symbols:
+  - symbol: 1
+    spriteId: d0c69b7a-6e54-48c7-8afd-ac7c8d3305ca
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 2
+    spriteId: fd8f2b47-877e-4c7f-b820-0660f8c429ba
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 3
+    spriteId: 6d97705b-3eeb-476d-bb97-47bc78a760f8
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: x
+    spriteId: 373a5b82-364c-4fe2-a29d-934708c77447
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 0
+    spriteId: 9fe83020-14f6-4ac4-8b23-fe20fd43758a
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 4
+    spriteId: 58409910-9fdb-4524-8e0f-aa64f63d948d
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 5
+    spriteId: 98ca35ff-1caa-43a1-9bec-371689035025
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 6
+    spriteId: 9801e286-6f40-45b7-beba-4d36043b6b9c
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 7
+    spriteId: d8a8766d-a770-4842-b1f2-63b5d36663fb
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 8
+    spriteId: dc087e44-2e90-42e6-9b17-4732ec9cb730
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 9
+    spriteId: 79761a82-b238-439f-8de5-bea07178704a
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: z
+    spriteId: 8d2eb630-8c10-4717-b463-7183dd026de8
+    spriteScaleX: 1
+    spriteScaleY: 1

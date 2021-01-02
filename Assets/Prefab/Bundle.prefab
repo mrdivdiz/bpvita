@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1670200755745761}
+  m_IsPrefabParent: 1
+--- !u!1 &1670200755745761
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4148149082975757}
+  - component: {fileID: 114924909071403874}
+  m_Layer: 0
+  m_Name: Bundle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4148149082975757
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670200755745761}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114924909071403874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1670200755745761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9ab2d938ba76a864c3102d3b57570fe, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  assetBundles:
+  - assetBundleId: Episode_1_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_2_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_3_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_4_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_5_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_6_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_Race_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_Sandbox_Levels
+    loadAtStart: 0
+  - assetBundleId: Episode_Sandbox_Levels_2
+    loadAtStart: 0
+  - assetBundleId: Audio_Collection
+    loadAtStart: 1
+  - assetBundleId: Music_Collection
+    loadAtStart: 1
+  exitConfirmation: {fileID: 0}

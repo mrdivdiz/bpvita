@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1845732551325097}
+  m_IsPrefabParent: 1
+--- !u!1 &1845732551325097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4218224587950827}
+  - component: {fileID: 114243194325057955}
+  m_Layer: 0
+  m_Name: Episode6Levels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4218224587950827
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845732551325097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114243194325057955
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1845732551325097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062c17fc5bb086ad4fa2dac4f057d176, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name: Episode6LevelSelection
+  m_label: 6
+  m_flurryID: ElPorkado
+  m_clearAchievement: grp.WHAT_A_TRIP
+  m_3starAchievement: grp.PIG_CRUSADE
+  m_special3StarAchievement: grp.LOST_PORK_RAIDERS
+  m_overrideInFlightMusic: 1
+  inFlightMusic:
+    assetBundle: Episode_6_Levels
+    assetName: InFlightMusicMaya
+  m_overrideBuildingMusic: 0
+  buildingMusic:
+    assetBundle: Music_Collection
+    assetName: BuildingMusic
+  totalLevelCount: 45
+  m_showStarLevelTransition: 0
+  m_levelInfos:
+  - sceneName: episode_6_level_1
+    levelLoaderGUID: ef9cf28a41a8e462e907f0ea2588767b
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_1_loader.prefab
+  - sceneName: episode_6_level_2
+    levelLoaderGUID: 5c2c468dd5ff64250940bcb5adf3d5ba
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_2_loader.prefab
+  - sceneName: episode_6_level_3
+    levelLoaderGUID: 253bf163e4c2e4cc1a2008d77e8a2ccf
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_3_loader.prefab
+  - sceneName: episode_6_level_4
+    levelLoaderGUID: 5282f38412a8b4632ad4e9d890137cc6
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_4_loader.prefab
+  - sceneName: episode_6_level_I
+    levelLoaderGUID: cf8a02e2e5ffc41cdb85d3f0e0ee6485
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_I_loader.prefab
+  - sceneName: episode_6_level_5
+    levelLoaderGUID: e64a07cab93f040809c784fa88487561
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_5_loader.prefab
+  - sceneName: episode_6_level_6
+    levelLoaderGUID: 9eec372f4359740ac9b663d1507632eb
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_6_loader.prefab
+  - sceneName: episode_6_level_7
+    levelLoaderGUID: daef072cb116d41bd86e0fa6f7417118
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_7_loader.prefab
+  - sceneName: episode_6_level_8
+    levelLoaderGUID: d737aad62f8ea47edaceee1e143d8d3a
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_8_loader.prefab
+  - sceneName: episode_6_level_II
+    levelLoaderGUID: 2f838c7285e8e4185a75ddc3723bbb7d
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_II_loader.prefab
+  - sceneName: episode_6_level_9
+    levelLoaderGUID: f0080aba5b4c847d8b20cba477094f56
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_9_loader.prefab
+  - sceneName: episode_6_level_10
+    levelLoaderGUID: 372878c9b221741719a3894e8291b5df
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_10_loader.prefab
+  - sceneName: episode_6_level_11
+    levelLoaderGUID: 256362f6ab50a4e3f919b294a59d8080
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_11_loader.prefab
+  - sceneName: episode_6_level_12
+    levelLoaderGUID: d4a630d0435fb43dfb9a38212a8570e6
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_12_loader.prefab
+  - sceneName: episode_6_level_III
+    levelLoaderGUID: dc7a884f0a4894ff8b1c7d540b76577b
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_III_loader.prefab
+  - sceneName: episode_6_level_13
+    levelLoaderGUID: a47b171ac657d463f83c8479d00e91b0
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_13_loader.prefab
+  - sceneName: episode_6_level_14
+    levelLoaderGUID: 39c125bc8ea0447469ad92840785fdb0
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_14_loader.prefab
+  - sceneName: episode_6_level_15
+    levelLoaderGUID: 803189920a0514b3a8ed983b11a0ec86
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_15_loader.prefab
+  - sceneName: episode_6_level_16
+    levelLoaderGUID: 06951d036ccde4501b199406cbd9a385
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_16_loader.prefab
+  - sceneName: episode_6_level_IV
+    levelLoaderGUID: d30368e46092e41b0ab7982ea339d6a4
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_IV_loader.prefab
+  - sceneName: episode_6_level_17
+    levelLoaderGUID: fee617de98c8d4ad6b5465ad6a299280
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_17_loader.prefab
+  - sceneName: episode_6_level_18
+    levelLoaderGUID: 18146b89bcf4d4a61a9e9fd6e9b617d9
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_18_loader.prefab
+  - sceneName: episode_6_level_19
+    levelLoaderGUID: 769c555ee9e8b4165af7ec25dc377eb8
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_19_loader.prefab
+  - sceneName: episode_6_level_20
+    levelLoaderGUID: 35b248ad744ab4467b7740d46c8555c8
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_20_loader.prefab
+  - sceneName: episode_6_level_V
+    levelLoaderGUID: 391717dc083284500993e7b7340256e7
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_V_loader.prefab
+  - sceneName: episode_6_level_21
+    levelLoaderGUID: 8fddef6022e3549ca8025e7ab84f7f57
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_21_loader.prefab
+  - sceneName: episode_6_level_22
+    levelLoaderGUID: b306971386ecc4cc2a6343af12996660
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_22_loader.prefab
+  - sceneName: episode_6_level_23
+    levelLoaderGUID: 25db22f535f36494f86c592c50198852
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_23_loader.prefab
+  - sceneName: episode_6_level_24
+    levelLoaderGUID: 43a5f5aececbf4aa8bd4e0a4fe3ef797
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_24_loader.prefab
+  - sceneName: episode_6_level_VI
+    levelLoaderGUID: 7b549e98e810645128a97e7fbdabad42
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_VI_loader.prefab
+  - sceneName: episode_6_level_25
+    levelLoaderGUID: eda207dbe37094847b79c1de37031f4c
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_25_loader.prefab
+  - sceneName: episode_6_level_26
+    levelLoaderGUID: 1a4a82bbf6390aa4ba815a1d0abbfcfe
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_26_loader.prefab
+  - sceneName: episode_6_level_27
+    levelLoaderGUID: 1227716fe45ba504cab44e014dd14860
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_27_loader.prefab
+  - sceneName: episode_6_level_28
+    levelLoaderGUID: e1be0dad6de75574f9efbb0adc4e9f0a
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_28_loader.prefab
+  - sceneName: episode_6_level_VII
+    levelLoaderGUID: 07b027c151063fa4180d227644872afa
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_VII_loader.prefab
+  - sceneName: episode_6_level_29
+    levelLoaderGUID: 3e311ed3f61fa7a4687654a314d1d258
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_29_loader.prefab
+  - sceneName: episode_6_level_30
+    levelLoaderGUID: a9bb2bbc19d83b843bfe4c12547134df
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_30_loader.prefab
+  - sceneName: episode_6_level_31
+    levelLoaderGUID: 93a7867fa7b1c9847888ba9ee5b56877
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_31_loader.prefab
+  - sceneName: episode_6_level_32
+    levelLoaderGUID: a2a685e271750d9419c978543f0ef31d
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_32_loader.prefab
+  - sceneName: episode_6_level_VIII
+    levelLoaderGUID: 317421f7109cf4f479e9ff522995e3ed
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_VIII_loader.prefab
+  - sceneName: episode_6_level_33
+    levelLoaderGUID: 0ba8582326aaefb45b2c8d5785ffc75d
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_33_loader.prefab
+  - sceneName: episode_6_level_34
+    levelLoaderGUID: 8170bc1fff41dfa4097bb0dc034be3ac
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_34_loader.prefab
+  - sceneName: episode_6_level_35
+    levelLoaderGUID: 9fa2484433f6b30479fb90e39d03feac
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_35_loader.prefab
+  - sceneName: episode_6_level_36
+    levelLoaderGUID: 3c0c4ff8563ac2748a5cce1f24266ecb
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_36_loader.prefab
+  - sceneName: episode_6_level_IX
+    levelLoaderGUID: 12659a2da2b3e264681bf5404fa9f23a
+    levelLoaderPath: Assets/Resources/Levels/Episode_6/episode_6_level_IX_loader.prefab
+  m_starLimits: 0800000008000000080000000a0000000a0000000a0000000c0000000c0000000c000000

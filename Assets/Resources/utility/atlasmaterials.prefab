@@ -1,0 +1,163 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1456245427894452}
+  m_IsPrefabParent: 1
+--- !u!1 &1347216830500965
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4989425220908083}
+  - component: {fileID: 33279054608678229}
+  - component: {fileID: 23803229825830985}
+  m_Layer: 10
+  m_Name: BadPiggies_Splash_Early
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!1 &1456245427894452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4395824373017563}
+  - component: {fileID: 114747699839509848}
+  m_Layer: 0
+  m_Name: atlasmaterials
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4395824373017563
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456245427894452}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4989425220908083}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4989425220908083
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347216830500965}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 18, y: 10.1, z: 1.12}
+  m_Children: []
+  m_Father: {fileID: 4395824373017563}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23803229825830985
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347216830500965}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 776f33f70f7672b0439419ec7e3b1ac3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -1168868595
+  m_SortingLayer: 0
+  m_SortingOrder: 1000
+--- !u!33 &33279054608678229
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1347216830500965}
+  m_Mesh: {fileID: 4300000, guid: a0114b592b0442a74cccf1239ae3ecaa, type: 2}
+--- !u!114 &114747699839509848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1456245427894452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff13083bc0022e91423a4766ea34fed6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  emptyTexture: {fileID: 2800000, guid: 65ae21a1bdfc149240f7f870dd249773, type: 3}
+  loadingScreen: {fileID: 1347216830500965}
+  normalMaterials:
+  - {fileID: 2100000, guid: ce5a9931cec8f4b84741e1391306eb66, type: 2}
+  - {fileID: 2100000, guid: 211b2b9cf7fafeba49193cd57a1b322e, type: 2}
+  - {fileID: 2100000, guid: 2a21c0112ce7ff9f4316fc402f407b62, type: 2}
+  - {fileID: 2100000, guid: 9edf03d7c3ebf98a40b609f43737cca1, type: 2}
+  - {fileID: 2100000, guid: 6267dd1a05e790a24087176f3fbd5c06, type: 2}
+  dimmedRenderQueueMaterials:
+  - {fileID: 2100000, guid: 0e790fabfad128a44e2886c485125349, type: 2}
+  - {fileID: 2100000, guid: 4ab535f334efc6a54d4951c79cf5a28a, type: 2}
+  - {fileID: 2100000, guid: a6f51d97465d8d8c44746a9d0e5c70ce, type: 2}
+  renderQueueMaterials:
+  - {fileID: 2100000, guid: d645821c4ba5a3874ae923f8072411a2, type: 2}
+  - {fileID: 2100000, guid: aca6a4c61ecfc2b7478ee26e64cc7497, type: 2}
+  - {fileID: 2100000, guid: ad767d84c61413a44d51f98b8b510826, type: 2}
+  partQueueZMaterials:
+  - {fileID: 2100000, guid: 125eb5b4333e41ad4195746718d4d04b, type: 2}
+  - {fileID: 2100000, guid: 765e60c277e6dc9948d8bfd9fd2c64a5, type: 2}
+  - {fileID: 2100000, guid: 7192b13e2ce92b944c98a934d851e1f9, type: 2}
+  grayMaterials:
+  - {fileID: 2100000, guid: 353dd8502954fba94b94127800699b99, type: 2}
+  - {fileID: 2100000, guid: 4eeb62bcc5dc71ac491c97048db164b7, type: 2}
+  - {fileID: 2100000, guid: 7975d66d65c10f9843645cf0df4004c6, type: 2}
+  - {fileID: 2100000, guid: c8645f77772e8697489568bafb23e62f, type: 2}
+  - {fileID: 2100000, guid: 5a70c133cd29d4bb49eb0d63bdec8586, type: 2}
+  shineMaterials:
+  - {fileID: 2100000, guid: 910e9f7b7da2efac4b7237d2c72c4b9d, type: 2}
+  - {fileID: 2100000, guid: 3ff67deee00a0086449be715c2f02939, type: 2}
+  - {fileID: 2100000, guid: 299d2ca0d94191844e1115bec1ac9238, type: 2}
+  - {fileID: 2100000, guid: 601fcfb7a69eaa8d4852505f68aceb32, type: 2}
+  - {fileID: 2100000, guid: 2bf4a81c9f39ec804d2dbc6ab8244dc1, type: 2}
+  alphaMaterials:
+  - {fileID: 2100000, guid: 53e55fd9801685804dfa71bbd8f63ce7, type: 2}
+  - {fileID: 2100000, guid: 2cfb9d310fe17baf4b1c49143fe9d650, type: 2}
+  - {fileID: 2100000, guid: 79168101a430ce9549dc36c5dcb9421e, type: 2}
+  - {fileID: 2100000, guid: ae5be9fd48a0bb904b35a295d6a7f687, type: 2}
+  - {fileID: 2100000, guid: 4d809054e068a9b441389f8c392ba468, type: 2}

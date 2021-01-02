@@ -1,0 +1,461 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1828283935284296}
+  m_IsPrefabParent: 1
+--- !u!1 &1828283935284296
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4184995070376900}
+  - component: {fileID: 114246559496320357}
+  - component: {fileID: 114626188397598794}
+  m_Layer: 0
+  m_Name: GameCenterManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4184995070376900
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1828283935284296}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4958630761500700}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114246559496320357
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1828283935284296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e8ae7e053c9aa045f3d9d7c7a59534, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+--- !u!114 &114626188397598794
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1828283935284296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f3cc6d32f5619a5442a3d138fdf031d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_achievementPopup: {fileID: 114645205559282129, guid: adefa3aeb0622cb64fb621b037d17563, type: 2}
+  m_leaderboardIDs: []
+--- !u!1 &1346072388536288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4958630761500700}
+  - component: {fileID: 114478265188675489}
+  m_Layer: 0
+  m_Name: AchievementData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4958630761500700
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346072388536288}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.62371, y: 0.7640644, z: -81}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4184995070376900}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114478265188675489
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346072388536288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb93806122384f8241148d8cd23d8fda, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_achievementList:
+  - id: grp.JUNIOR_WRECKER
+    iconFileName: 07_junior_wrecker
+    limit: 1000
+    debugLimit: 5
+  - id: grp.GROUND_HOG_DAY
+    iconFileName: 01_ground_hog_day
+    limit: 0
+    debugLimit: 0
+  - id: grp.WELL_GROUNDED
+    iconFileName: 03_well_grounded
+    limit: 0
+    debugLimit: 0
+  - id: grp.BORN_TO_BE_AIRBORNE
+    iconFileName: 04_born_to_be_airborne
+    limit: 0
+    debugLimit: 0
+  - id: grp.GROUND_BREAKER
+    iconFileName: 05_ground_breaker
+    limit: 0
+    debugLimit: 0
+  - id: grp.PRETTY_FLY
+    iconFileName: 05_ground_breaker
+    limit: 0
+    debugLimit: 0
+  - id: grp.WHEN_PIGS_FLY
+    iconFileName: 02_when_pigs_fly
+    limit: 0
+    debugLimit: 0
+  - id: grp.QUALIFIED_WRECKER
+    iconFileName: 08_qualified_wrecker
+    limit: 10000
+    debugLimit: 20
+  - id: grp.VETERAN_WRECKER
+    iconFileName: 09_veteran_wrecker
+    limit: 100000
+    debugLimit: 50
+  - id: grp.PIGSHAW
+    iconFileName: 10_pigshaw
+    limit: 5
+    debugLimit: 1
+  - id: grp.HOGFFEUR
+    iconFileName: 11_hogffeur
+    limit: 50
+    debugLimit: 5
+  - id: grp.THINK_INSIDE_THE_BOX
+    iconFileName: 12_think_inside_the_box
+    limit: 0
+    debugLimit: 0
+  - id: grp.THINK_OUTSIDE_THE_BOX
+    iconFileName: 13_think_outside_the_box
+    limit: 0
+    debugLimit: 0
+  - id: grp.LITERATE
+    iconFileName: 14_literate_a
+    limit: 0
+    debugLimit: 0
+  - id: grp.BOOM_BOOM_I
+    iconFileName: 15_boom_boom_i
+    limit: 50
+    debugLimit: 5
+  - id: grp.BOOM_BOOM_II
+    iconFileName: 16_boom_boom_ii
+    limit: 500
+    debugLimit: 20
+  - id: grp.BOOM_BOOM_III
+    iconFileName: 17_boom_boom_iii
+    limit: 5000
+    debugLimit: 50
+  - id: grp.COMPLEX_COMPLEX
+    iconFileName: 18_complex_complex
+    limit: 25
+    debugLimit: 10
+  - id: grp.SKILLED_PILOT
+    iconFileName: 19_skilled_pilot
+    limit: 50
+    debugLimit: 10
+  - id: grp.POPPERS_THEORY_I
+    iconFileName: 20_poppers_theory_i
+    limit: 100
+    debugLimit: 10
+  - id: grp.POPPERS_THEORY_II
+    iconFileName: 21_poppers_theory_ii
+    limit: 1000
+    debugLimit: 20
+  - id: grp.POPPERS_THEORY_III
+    iconFileName: 22_poppers_theory_iii
+    limit: 10000
+    debugLimit: 30
+  - id: grp.PORCINE_CANNONBALL
+    iconFileName: 23_porcine_cannonball
+    limit: 0
+    debugLimit: 0
+  - id: grp.TOURIST_I
+    iconFileName: 24_tourist_i
+    limit: 1000
+    debugLimit: 10
+  - id: grp.TOURIST_II
+    iconFileName: 25_tourist_ii
+    limit: 10000
+    debugLimit: 100
+  - id: grp.TOURIST_III
+    iconFileName: 26_tourist_iii
+    limit: 100000
+    debugLimit: 500
+  - id: grp.CRASH_COURSE
+    iconFileName: 27_crash_course
+    limit: 6
+    debugLimit: 2
+  - id: grp.BRUSH
+    iconFileName: 28_brush
+    limit: 0
+    debugLimit: 0
+  - id: grp.IS_IT_SECRET
+    iconFileName: 29_is_it_secret
+    limit: 10
+    debugLimit: 3
+  - id: grp.SECRET_ADMIRER
+    iconFileName: 30_secret_admirer
+    limit: 20
+    debugLimit: 6
+  - id: grp.ROLLING_LOW_I
+    iconFileName: 30_rolling_low_i
+    limit: 10
+    debugLimit: 5
+  - id: grp.ROLLING_LOW_II
+    iconFileName: 31_rolling_low_ii
+    limit: 100
+    debugLimit: 30
+  - id: grp.ROLLING_LOW_III
+    iconFileName: 32_rolling_low_iii
+    limit: 1000
+    debugLimit: 100
+  - id: grp.FLIGHT_IN_THE_NIGHT
+    iconFileName: 36_flight_in_the_night
+    limit: 0
+    debugLimit: 0
+  - id: grp.THE_GREAT_ESCAPE
+    iconFileName: 37_the_great_escape
+    limit: 0
+    debugLimit: 0
+  - id: grp.HEIST_OF_THE_CENTURY
+    iconFileName: 38_heist_of_the_century
+    limit: 0
+    debugLimit: 0
+  - id: grp.MASTER_EXPLORER
+    iconFileName: 35_master_explorer
+    limit: 30
+    debugLimit: 9
+  - id: grp.CANNON_FODDER
+    iconFileName: 33_cannon_fodder
+    limit: 0
+    debugLimit: 0
+  - id: grp.NER_NER
+    iconFileName: 34_ner_ner
+    limit: 0
+    debugLimit: 0
+  - id: grp.SUCKER_PUNCH
+    iconFileName: 41_sucker_punch
+    limit: 0
+    debugLimit: 0
+  - id: grp.SPIDER_PIG
+    iconFileName: 42_spider_pig
+    limit: 0
+    debugLimit: 0
+  - id: grp.SHOW_OFF
+    iconFileName: 43_show_off
+    limit: 0
+    debugLimit: 0
+  - id: grp.FEEDER
+    iconFileName: 44_feeder
+    limit: 211
+    debugLimit: 0
+  - id: grp.CONFECTIONER
+    iconFileName: 45_confectioner
+    limit: 20
+    debugLimit: 20
+  - id: grp.KINGS_FAVORITE
+    iconFileName: 46_kings_favorite
+    limit: 0
+    debugLimit: 0
+  - id: grp.CAKE_WALK
+    iconFileName: 47_cake_walk
+    limit: 0
+    debugLimit: 0
+  - id: grp.SUPER_CHARGED
+    iconFileName: 48_super_charged
+    limit: 0
+    debugLimit: 0
+  - id: grp.INDESTRUCTIBLE
+    iconFileName: 49_indestructible
+    limit: 0
+    debugLimit: 0
+  - id: grp.CHIPS_FOR_WHIPS
+    iconFileName: 50_chips_for_whips
+    limit: 0
+    debugLimit: 0
+  - id: grp.MAGNET_MASTER
+    iconFileName: 51_master_magnet
+    limit: 0
+    debugLimit: 0
+  - id: grp.SWINGIN_PIGGIES
+    iconFileName: 52_swingin_piggies
+    limit: 0
+    debugLimit: 0
+  - id: grp.KING_PIG_OF_THE_JUNGLE
+    iconFileName: 53_king_pig_of_the_jungle
+    limit: 0
+    debugLimit: 0
+  - id: grp.RISE_AND_SWINE
+    iconFileName: 54_rise_and_swine
+    limit: 0
+    debugLimit: 0
+  - id: grp.EARLY_PIG
+    iconFileName: 55_early_pig
+    limit: 0
+    debugLimit: 0
+  - id: grp.HOG_OF_THE_MORNING
+    iconFileName: 56_hog_of_the_morning
+    limit: 0
+    debugLimit: 0
+  - id: grp.PUMPKIN_CHARIOT
+    iconFileName: 57_pumpkin_chariot
+    limit: 0
+    debugLimit: 0
+  - id: grp.SWEET_NIGHTMARES
+    iconFileName: 58_sweet_nightmares
+    limit: 0
+    debugLimit: 0
+  - id: grp.HAM_HELSING
+    iconFileName: 59_ham_helsing
+    limit: 0
+    debugLimit: 0
+  - id: grp.BOAR_OF_THE_UNDEAD
+    iconFileName: 60_boar_of_the_undead
+    limit: 0
+    debugLimit: 0
+  - id: grp.MEGA_MASTER_EXPLORER
+    iconFileName: 61_mega_master_explorer
+    limit: 45
+    debugLimit: 12
+  - id: grp.LPA_BRIDGE_BREAK
+    iconFileName: 62_gap_the_bridge
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_PIGFALL
+    iconFileName: 63_pigfall
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_LABYRINTH_STAR
+    iconFileName: 64_a-maze-ing
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_ALL_PARTS
+    iconFileName: 65_thatll_do_pig
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_GOLDPIG_STAR
+    iconFileName: 66_rube_goldpig_machine
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_LOOP_STAR
+    iconFileName: 67_gotta_go_fast
+    limit: 0
+    debugLimit: 0
+  - id: grp.LPA_GEARBOX
+    iconFileName: 68_full_reverse
+    limit: 0
+    debugLimit: 0
+  - id: grp.WHAT_A_TRIP
+    iconFileName: 69_what_a_trip
+    limit: 0
+    debugLimit: 0
+  - id: grp.PIG_CRUSADE
+    iconFileName: 70_pig_crusade
+    limit: 0
+    debugLimit: 0
+  - id: grp.LOST_PORK_RAIDERS
+    iconFileName: 71_lost_pork_raiders
+    limit: 0
+    debugLimit: 0
+  - id: grp.LIGHT_UP_DARKNESS
+    iconFileName: 72_light_up_darkness
+    limit: 0
+    debugLimit: 0
+  - id: grp.SOMEONES_THERE
+    iconFileName: 73_someones_there
+    limit: 50
+    debugLimit: 5
+  - id: grp.BELONGS_IN_MUSEUM
+    iconFileName: 74_belongs_in_museum
+    limit: 0
+    debugLimit: 0
+  - id: grp.ARCHEOLOGIST
+    iconFileName: 75_archeologist
+    limit: 15
+    debugLimit: 5
+  - id: grp.TOP_OF_THE_WORLD
+    iconFileName: 76_top_of_the_world
+    limit: 0
+    debugLimit: 0
+  - id: grp.WHEN_PIGS_FALL
+    iconFileName: 77_when_pigs_fall
+    limit: 0
+    debugLimit: 0
+  - id: grp.X_MARKS_SPOT
+    iconFileName: 78_x_marks_spot
+    limit: 0
+    debugLimit: 0
+  - id: grp.PINK_BUILDER
+    iconFileName: 79_pink_builder
+    limit: 5
+    debugLimit: 1
+  - id: grp.BONE_BUILDER
+    iconFileName: 80_bone_builder
+    limit: 5
+    debugLimit: 1
+  - id: grp.GOLDEN_BUILDER
+    iconFileName: 81_golden_builder
+    limit: 5
+    debugLimit: 1
+  - id: grp.BLACK_BUILDER
+    iconFileName: 82_black_builder
+    limit: 5
+    debugLimit: 1
+  - id: grp.COMMON_COLLECTOR
+    iconFileName: 83_common_collector
+    limit: 40
+    debugLimit: 3
+  - id: grp.RARE_COLLECTOR
+    iconFileName: 84_rare_collector
+    limit: 40
+    debugLimit: 3
+  - id: grp.EPIC_COLLECTOR
+    iconFileName: 85_epic_collector
+    limit: 40
+    debugLimit: 3
+  - id: grp.GET_GOLDEN_PART
+    iconFileName: 86_get_golden_part
+    limit: 0
+    debugLimit: 0
+  - id: grp.CRAFT_PARTS
+    iconFileName: 87_craft_part
+    limit: 0
+    debugLimit: 0
+  - id: grp.FREE_CRATE
+    iconFileName: 88_free_crate
+    limit: 0
+    debugLimit: 0
+  - id: grp.HIDDEN_CRATE
+    iconFileName: 89_hidden_crate
+    limit: 0
+    debugLimit: 0
