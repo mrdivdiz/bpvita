@@ -1,0 +1,206 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1823830403333914}
+  m_IsPrefabParent: 1
+--- !u!1 &1823830403333914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4294775240241800}
+  - component: {fileID: 114880838247998023}
+  m_Layer: 0
+  m_Name: Episode1Levels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4294775240241800
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823830403333914}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114880838247998023
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1823830403333914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062c17fc5bb086ad4fa2dac4f057d176, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name: Episode1LevelSelection
+  m_label: 1
+  m_flurryID: GHD
+  m_clearAchievement: grp.GROUND_HOG_DAY
+  m_3starAchievement: grp.WELL_GROUNDED
+  m_special3StarAchievement: grp.GROUND_BREAKER
+  m_overrideInFlightMusic: 0
+  inFlightMusic:
+    assetBundle: Music_Collection
+    assetName: InFlightMusic
+  m_overrideBuildingMusic: 0
+  buildingMusic:
+    assetBundle: Music_Collection
+    assetName: BuildingMusic
+  totalLevelCount: 45
+  m_showStarLevelTransition: 1
+  m_levelInfos:
+  - sceneName: Level_21
+    levelLoaderGUID: ffb164d15c5485246aa78098005c093d
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_21_loader.prefab
+  - sceneName: Level_05
+    levelLoaderGUID: 5f8242f4a22f74d4781fce326957f802
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_05_loader.prefab
+  - sceneName: test28
+    levelLoaderGUID: c53ec73687a50e349b5e5df938dbab7f
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test28_loader.prefab
+  - sceneName: Level_20
+    levelLoaderGUID: 6005f4e5555b77f4eb829d63072c9399
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_20_loader.prefab
+  - sceneName: Level_23
+    levelLoaderGUID: 1b4523b2f472c254d80c013b9632c00c
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/Level_23_loader.prefab
+  - sceneName: Level_49
+    levelLoaderGUID: aac5d5312444bc84795e8bac7c854948
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_49_loader.prefab
+  - sceneName: test02
+    levelLoaderGUID: d2c67cca5d3afca4ab84ec64b8465162
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test02_loader.prefab
+  - sceneName: Level_22
+    levelLoaderGUID: e2dd732301b6b4449824273e71144e35
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_22_loader.prefab
+  - sceneName: test05
+    levelLoaderGUID: 1a5cfc4a5f2cd674a94136d4fefb0f5b
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test05_loader.prefab
+  - sceneName: test29
+    levelLoaderGUID: 67ce8ebfe55c95b4cafaa4486e9b8e89
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/test29_loader.prefab
+  - sceneName: test51
+    levelLoaderGUID: 322115d1dd81ec549a76bd65bf98b6d1
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test51_loader.prefab
+  - sceneName: test31
+    levelLoaderGUID: 6c3252c7716440440af353ef0bb5f0d2
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test31_loader.prefab
+  - sceneName: Level_17
+    levelLoaderGUID: e74f25f13cf748e4a82e992882e436f7
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_17_loader.prefab
+  - sceneName: test11
+    levelLoaderGUID: b1de53051388d704c915ae707915f6bb
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test11_loader.prefab
+  - sceneName: test33
+    levelLoaderGUID: 443bba3206d09fe4eab46547b30daf14
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/test33_loader.prefab
+  - sceneName: Level_24
+    levelLoaderGUID: 3a52f3205a2d6d24bb189cc83b993b22
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_24_loader.prefab
+  - sceneName: Level_25
+    levelLoaderGUID: d1e1680815d0e0e4ba2b42f2d3bd28c5
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_25_loader.prefab
+  - sceneName: Level_14
+    levelLoaderGUID: 339344d5e0156564f97d185239d49659
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_14_loader.prefab
+  - sceneName: test13
+    levelLoaderGUID: 3e64095da31478b459d6b194858e2d6c
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test13_loader.prefab
+  - sceneName: Level_27
+    levelLoaderGUID: 586a856f2879251459378bebf926dabc
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/Level_27_loader.prefab
+  - sceneName: Level_26
+    levelLoaderGUID: ba45b92fcbb26234881384c808c481a7
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_26_loader.prefab
+  - sceneName: Level_15
+    levelLoaderGUID: b8cd9bb845e7e334bac56a451ae32afa
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_15_loader.prefab
+  - sceneName: test21
+    levelLoaderGUID: 99c29ada09c115c458db6fe7e66b81cd
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test21_loader.prefab
+  - sceneName: Level_18
+    levelLoaderGUID: 6f4b0680d9867d14e9923a4515c83934
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_18_loader.prefab
+  - sceneName: test34
+    levelLoaderGUID: 4333a8739f8e849459d7f5ef97ec8572
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/test34_loader.prefab
+  - sceneName: test35
+    levelLoaderGUID: 42631e6d2930b0540b93440e791a01b2
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test35_loader.prefab
+  - sceneName: test39
+    levelLoaderGUID: f47f736313e0a414abc6f15a130318e9
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test39_loader.prefab
+  - sceneName: test40
+    levelLoaderGUID: f2c57b7d4328f7047af816f13997f578
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test40_loader.prefab
+  - sceneName: test36
+    levelLoaderGUID: 68ef4d3c28a41fb4994187ce96f3f8b8
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test36_loader.prefab
+  - sceneName: test37
+    levelLoaderGUID: 16ebeec0aa00bb64097d782d599c674c
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/test37_loader.prefab
+  - sceneName: test22
+    levelLoaderGUID: 5b8b3c17b77d3514aa233886d3c79d32
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test22_loader.prefab
+  - sceneName: test25
+    levelLoaderGUID: b4d9cfeeddbe79c449611b557bfb06e6
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test25_loader.prefab
+  - sceneName: test26
+    levelLoaderGUID: 6217c61a5b5aa02488d289da91536d02
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test26_loader.prefab
+  - sceneName: test23
+    levelLoaderGUID: 870b43e6b4c701f4f8ff4bca5a5ba799
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test23_loader.prefab
+  - sceneName: Level_29
+    levelLoaderGUID: 463b75fb1f532154eb19e986f5bbd103
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/Level_29_loader.prefab
+  - sceneName: test41
+    levelLoaderGUID: 446becfa187bc244591494108b6867cf
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test41_loader.prefab
+  - sceneName: test43
+    levelLoaderGUID: 42a1dbf99191165499c458509b579c31
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test43_loader.prefab
+  - sceneName: test44
+    levelLoaderGUID: 235fbb67032368248b6d4faefe54d061
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test44_loader.prefab
+  - sceneName: test45
+    levelLoaderGUID: d6988f90bf3bb6448879ebe25b626f26
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test45_loader.prefab
+  - sceneName: test42
+    levelLoaderGUID: b64fbb0b43947c245aa759b56bcb8f9c
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/test42_loader.prefab
+  - sceneName: Level_30
+    levelLoaderGUID: 7f52c260966317e499c03858a7beaa02
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_30_loader.prefab
+  - sceneName: test47
+    levelLoaderGUID: 4d74e474df3d3d8499c6beb0a344ddc2
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/test47_loader.prefab
+  - sceneName: Level_31
+    levelLoaderGUID: cdaf58d9675e6e84caf08c2b92cd761c
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_31_loader.prefab
+  - sceneName: Level_32
+    levelLoaderGUID: 41eae5b0138aa4b4c91e0f81f8e9fa8e
+    levelLoaderPath: Assets/Resources/Levels/Episode_1/Level_32_loader.prefab
+  - sceneName: Level_33
+    levelLoaderGUID: 2f9f84d16424b264cafa322dedfb145b
+    levelLoaderPath: Assets/Resources/Levels/Episode_1_Cave/Level_33_loader.prefab
+  m_starLimits: 0800000008000000080000000a0000000a0000000a0000000c0000000c0000000c000000

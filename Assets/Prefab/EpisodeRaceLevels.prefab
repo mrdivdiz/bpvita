@@ -1,0 +1,330 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1291115936797129}
+  m_IsPrefabParent: 1
+--- !u!1 &1291115936797129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4867116002351269}
+  - component: {fileID: 114012155161454132}
+  m_Layer: 0
+  m_Name: EpisodeRaceLevels
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4867116002351269
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291115936797129}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114012155161454132
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1291115936797129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e92a45434d78a64fdfa76623d9080c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_name: RaceLevelSelection
+  m_label: R
+  m_flurryID: Race
+  m_levels:
+  - m_identifier: R-1
+    m_leaderboardId: grp.1001
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_04_loader.prefab
+    m_levelLoaderGUID: 3c61235eb05daf84592cd4b4dc084992
+  - m_identifier: R-2
+    m_leaderboardId: grp.1002
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_05_loader.prefab
+    m_levelLoaderGUID: 928dc9277dc08724486cf78571286e6b
+  - m_identifier: R-3
+    m_leaderboardId: grp.1003
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_06_loader.prefab
+    m_levelLoaderGUID: 9949828380fb82b4d9b1a9ce80329096
+  - m_identifier: R-4
+    m_leaderboardId: grp.1004
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_01_loader.prefab
+    m_levelLoaderGUID: ec1935d71dceafb43b8a48fdf991a66e
+  - m_identifier: R-5
+    m_leaderboardId: grp.1005
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_02_loader.prefab
+    m_levelLoaderGUID: 0628732ecd4ed1b41b0761703120fec6
+  - m_identifier: R-6
+    m_leaderboardId: grp.1006
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_03_loader.prefab
+    m_levelLoaderGUID: ecbbc15784f67f44a8266acd721188a0
+  - m_identifier: R-7
+    m_leaderboardId: grp.1007
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_07_loader.prefab
+    m_levelLoaderGUID: 1d342305446ec6e4cbbd4a1bc8337fb1
+  - m_identifier: R-8
+    m_leaderboardId: grp.1008
+    m_levelLoaderPath: Assets/Resources/Levels/Episode_Race/Level_Race_08_loader.prefab
+    m_levelLoaderGUID: b0194af3812fbc04f8c1507c5e0e8eb0
+  m_unlockables:
+  - m_identifier: R-1
+    m_levelNumber: 1
+    m_tiers:
+    - m_starLimit: 15
+      m_part: 5
+    - m_starLimit: 15
+      m_part: 7
+    - m_starLimit: 20
+      m_part: 4
+    - m_starLimit: 20
+      m_part: 28
+    - m_starLimit: 25
+      m_part: 31
+    - m_starLimit: 25
+      m_part: 25
+    - m_starLimit: 30
+      m_part: 17
+    - m_starLimit: 30
+      m_part: 29
+    - m_starLimit: 35
+      m_part: 13
+    - m_starLimit: 35
+      m_part: 15
+    - m_starLimit: 40
+      m_part: 26
+  - m_identifier: R-2
+    m_levelNumber: 2
+    m_tiers:
+    - m_starLimit: 45
+      m_part: 6
+    - m_starLimit: 45
+      m_part: 2
+    - m_starLimit: 50
+      m_part: 3
+    - m_starLimit: 50
+      m_part: 12
+    - m_starLimit: 55
+      m_part: 7
+    - m_starLimit: 55
+      m_part: 31
+    - m_starLimit: 55
+      m_part: 28
+    - m_starLimit: 60
+      m_part: 16
+    - m_starLimit: 60
+      m_part: 35
+    - m_starLimit: 65
+      m_part: 17
+    - m_starLimit: 65
+      m_part: 26
+    - m_starLimit: 70
+      m_part: 13
+    - m_starLimit: 75
+      m_part: 5
+  - m_identifier: R-3
+    m_levelNumber: 3
+    m_tiers:
+    - m_starLimit: 80
+      m_part: 5
+    - m_starLimit: 80
+      m_part: 7
+    - m_starLimit: 85
+      m_part: 4
+    - m_starLimit: 85
+      m_part: 28
+    - m_starLimit: 90
+      m_part: 31
+    - m_starLimit: 90
+      m_part: 25
+    - m_starLimit: 95
+      m_part: 17
+    - m_starLimit: 95
+      m_part: 29
+    - m_starLimit: 100
+      m_part: 13
+    - m_starLimit: 100
+      m_part: 15
+    - m_starLimit: 105
+      m_part: 26
+  - m_identifier: R-4
+    m_levelNumber: 4
+    m_tiers:
+    - m_starLimit: 110
+      m_part: 19
+    - m_starLimit: 110
+      m_part: 25
+    - m_starLimit: 115
+      m_part: 4
+    - m_starLimit: 115
+      m_part: 13
+    - m_starLimit: 115
+      m_part: 28
+    - m_starLimit: 115
+      m_part: 30
+    - m_starLimit: 120
+      m_part: 31
+    - m_starLimit: 120
+      m_part: 34
+    - m_starLimit: 125
+      m_part: 21
+    - m_starLimit: 125
+      m_part: 35
+    - m_starLimit: 130
+      m_part: 17
+    - m_starLimit: 130
+      m_part: 33
+    - m_starLimit: 130
+      m_part: 29
+    - m_starLimit: 135
+      m_part: 15
+    - m_starLimit: 135
+      m_part: 5
+    - m_starLimit: 140
+      m_part: 26
+    - m_starLimit: 145
+      m_part: 24
+  - m_identifier: R-5
+    m_levelNumber: 5
+    m_tiers:
+    - m_starLimit: 150
+      m_part: 6
+    - m_starLimit: 150
+      m_part: 1
+    - m_starLimit: 150
+      m_part: 2
+    - m_starLimit: 150
+      m_part: 9
+    - m_starLimit: 150
+      m_part: 11
+    - m_starLimit: 155
+      m_part: 3
+    - m_starLimit: 155
+      m_part: 12
+    - m_starLimit: 160
+      m_part: 7
+    - m_starLimit: 160
+      m_part: 28
+    - m_starLimit: 160
+      m_part: 31
+    - m_starLimit: 165
+      m_part: 16
+    - m_starLimit: 165
+      m_part: 35
+    - m_starLimit: 170
+      m_part: 26
+    - m_starLimit: 170
+      m_part: 29
+    - m_starLimit: 170
+      m_part: 17
+    - m_starLimit: 175
+      m_part: 13
+    - m_starLimit: 180
+      m_part: 5
+  - m_identifier: R-6
+    m_levelNumber: 6
+    m_tiers:
+    - m_starLimit: 190
+      m_part: 25
+    - m_starLimit: 190
+      m_part: 19
+    - m_starLimit: 195
+      m_part: 13
+    - m_starLimit: 195
+      m_part: 4
+    - m_starLimit: 195
+      m_part: 28
+    - m_starLimit: 195
+      m_part: 30
+    - m_starLimit: 200
+      m_part: 31
+    - m_starLimit: 200
+      m_part: 34
+    - m_starLimit: 205
+      m_part: 21
+    - m_starLimit: 205
+      m_part: 35
+    - m_starLimit: 210
+      m_part: 17
+    - m_starLimit: 210
+      m_part: 33
+    - m_starLimit: 210
+      m_part: 29
+    - m_starLimit: 215
+      m_part: 15
+    - m_starLimit: 215
+      m_part: 5
+    - m_starLimit: 220
+      m_part: 26
+    - m_starLimit: 225
+      m_part: 24
+  - m_identifier: R-7
+    m_levelNumber: 7
+    m_tiers:
+    - m_starLimit: 230
+      m_part: 25
+    - m_starLimit: 230
+      m_part: 19
+    - m_starLimit: 230
+      m_part: 39
+    - m_starLimit: 235
+      m_part: 13
+    - m_starLimit: 235
+      m_part: 4
+    - m_starLimit: 235
+      m_part: 28
+    - m_starLimit: 235
+      m_part: 30
+    - m_starLimit: 240
+      m_part: 31
+    - m_starLimit: 240
+      m_part: 34
+    - m_starLimit: 245
+      m_part: 21
+    - m_starLimit: 245
+      m_part: 35
+    - m_starLimit: 250
+      m_part: 17
+    - m_starLimit: 250
+      m_part: 33
+    - m_starLimit: 250
+      m_part: 29
+    - m_starLimit: 255
+      m_part: 15
+    - m_starLimit: 255
+      m_part: 5
+    - m_starLimit: 260
+      m_part: 26
+    - m_starLimit: 265
+      m_part: 24
+    - m_starLimit: 270
+      m_part: 40
+  - m_identifier: R-8
+    m_levelNumber: 8
+    m_tiers:
+    - m_starLimit: 280
+      m_part: 16
+    - m_starLimit: 285
+      m_part: 26
+    - m_starLimit: 290
+      m_part: 5

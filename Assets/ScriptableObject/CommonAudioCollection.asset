@@ -1,0 +1,966 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301c6a8ba1c7eba2486213f0a03f9c8d, type: 3}
+  m_Name: CommonAudioCollection
+  m_EditorClassIdentifier:
+  bundleMusicTheme:
+    assetBundle: Music_Collection
+    assetName: MusicTheme
+  bundleLevelSelectionMusic:
+    assetBundle: Music_Collection
+    assetName: LevelSelectionMusic
+  bundleInFlightMusic:
+    assetBundle: Music_Collection
+    assetName: InFlightMusic
+  bundleBuildMusic:
+    assetBundle: Music_Collection
+    assetName: BuildingMusic
+  bundleFeedingMusic:
+    assetBundle: Music_Collection
+    assetName: FeedingMusic
+  bundleAmbientJungle:
+    assetBundle: Episode_1_Levels
+    assetName: AmbientJungle
+  bundleAmbientPlateau:
+    assetBundle: Episode_3_Levels
+    assetName: AmbientPlateau
+  bundleAmbientCave:
+    assetBundle: Music_Collection
+    assetName: AmbientCave
+  bundleAmbientNight:
+    assetBundle: Episode_4_Levels
+    assetName: AmbientNight
+  bundleAmbientMorning:
+    assetBundle: Episode_2_Levels
+    assetName: AmbientMorning
+  bundleAmbientHalloween:
+    assetBundle: Episode_5_Levels
+    assetName: AmbientHalloween
+  bundleAmbientMaya:
+    assetBundle: Episode_6_Levels
+    assetName: AmbientMaya
+  bundleCakeRaceTheme:
+    assetBundle: Music_Collection
+    assetName: CakeRaceMusic
+  bundleXmasThemeSong:
+    assetBundle: Music_Collection
+    assetName: ABXmasInstrumental
+  bundleMenuClick:
+    assetBundle: Audio_Collection
+    assetName: ui_gadget_button
+  menuClick: {fileID: 0}
+  bundleGadgetButtonClick:
+    assetBundle: Audio_Collection
+    assetName: ui_gadget_button
+  gadgetButtonClick: {fileID: 0}
+  bundleMenuHover:
+    assetBundle: Audio_Collection
+    assetName: SFX_Menu_Drag
+  menuHover: {fileID: 0}
+  bundleGoalBoxCollected:
+    assetBundle: Audio_Collection
+    assetName: Goal
+  goalBoxCollected: {fileID: 0}
+  bundleBonusBoxCollected:
+    assetBundle: Audio_Collection
+    assetName: BonusBox
+  bonusBoxCollected: {fileID: 0}
+  bundleDessertCollected:
+    assetBundle: Audio_Collection
+    assetName: DessertCollected
+  dessertCollected: {fileID: 0}
+  bundlePlacePart:
+    assetBundle: Audio_Collection
+    assetName: SFX_Menu_PlacePart
+  placePart: {fileID: 0}
+  bundleRotatePart:
+    assetBundle: Audio_Collection
+    assetName: gadget_rotate_01
+  rotatePart: {fileID: 0}
+  bundleDragPart:
+    assetBundle: Audio_Collection
+    assetName: SFX_Menu_Drag
+  dragPart: {fileID: 0}
+  bundleRemovePart:
+    assetBundle: Audio_Collection
+    assetName: SFX_Menu_Remove_Part
+  removePart: {fileID: 0}
+  bundleClearBuildGrid:
+    assetBundle: Audio_Collection
+    assetName: clear_canvas
+  clearBuildGrid: {fileID: 0}
+  bundleBuildContraption:
+    assetBundle: Audio_Collection
+    assetName: SFX_Menu_Button
+  buildContraption: {fileID: 0}
+  bundleVictory:
+    assetBundle: Audio_Collection
+    assetName: Music_LevelComplete
+  victory: {fileID: 0}
+  bundleStarEffects:
+  - assetBundle: Audio_Collection
+    assetName: star_1
+  - assetBundle: Audio_Collection
+    assetName: star_2
+  - assetBundle: Audio_Collection
+    assetName: star_3
+  starEffects:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleStarLoops:
+  - assetBundle: Audio_Collection
+    assetName: star_loop_1
+  - assetBundle: Audio_Collection
+    assetName: star_loop_2
+  - assetBundle: Audio_Collection
+    assetName: star_loop_3
+  starLoops:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleBalloonPop:
+    assetBundle: Audio_Collection
+    assetName: BalloonPop
+  balloonPop: {fileID: 0}
+  bundleFan:
+    assetBundle: Audio_Collection
+    assetName: FanLoop
+  fan: {fileID: 0}
+  bundlePropeller:
+    assetBundle: Audio_Collection
+    assetName: PropellerLoop
+  propeller: {fileID: 0}
+  bundleMotorWheelLoop:
+    assetBundle: Audio_Collection
+    assetName: MotorWheelLoop
+  motorWheelLoop: {fileID: 0}
+  bundleNormalWheelLoop:
+    assetBundle: Audio_Collection
+    assetName: NormalWheelLoop
+  normalWheelLoop: {fileID: 0}
+  bundleSmallWheelLoop:
+    assetBundle: Audio_Collection
+    assetName: SmallWheelLoop
+  smallWheelLoop: {fileID: 0}
+  bundleWoodenWheelLoop:
+    assetBundle: Audio_Collection
+    assetName: WoodenWheelLoop
+  woodenWheelLoop: {fileID: 0}
+  bundleStickyWheelLoop:
+    assetBundle: Audio_Collection
+    assetName: SuctionWheelLoop
+  stickyWheelLoop: {fileID: 0}
+  bundleRotorLoop:
+    assetBundle: Audio_Collection
+    assetName: RotorLoop
+  rotorLoop: {fileID: 0}
+  bundleBellowsPuff:
+    assetBundle: Audio_Collection
+    assetName: BellowsPuff
+  bellowsPuff: {fileID: 0}
+  bundleElectricEngine:
+    assetBundle: Audio_Collection
+    assetName: ElectricEngineLoop
+  electricEngine: {fileID: 0}
+  bundleEngine:
+    assetBundle: Audio_Collection
+    assetName: EngineLoop
+  engine: {fileID: 0}
+  bundleV8Engine:
+    assetBundle: Audio_Collection
+    assetName: V8EngineLoop
+  V8Engine: {fileID: 0}
+  bundleBottleCork:
+    assetBundle: Audio_Collection
+    assetName: BottleCork
+  bottleCork: {fileID: 0}
+  bundleUmbrellaOpen:
+    assetBundle: Audio_Collection
+    assetName: UmbrellaOpen
+  umbrellaOpen: {fileID: 0}
+  bundleUmbrellaClose:
+    assetBundle: Audio_Collection
+    assetName: UmbrellaClose
+  umbrellaClose: {fileID: 0}
+  bundleTntExplosion:
+    assetBundle: Audio_Collection
+    assetName: TNTExplosion
+  tntExplosion: {fileID: 0}
+  bundleSandbagCollision:
+    assetBundle: Audio_Collection
+    assetName: ui_gadget_button
+  sandbagCollision: {fileID: 0}
+  bundleSpringBoxingGloveShoot:
+    assetBundle: Audio_Collection
+    assetName: SpringBoxingGloveShoot
+  springBoxingGloveShoot: {fileID: 0}
+  bundleSpringBoxingGloveWinding:
+    assetBundle: Audio_Collection
+    assetName: SpringBoxingGloveWinding
+  springBoxingGloveWinding: {fileID: 0}
+  bundleGrapplingHookAttach:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookAttach
+  grapplingHookAttach: {fileID: 0}
+  bundleGrapplingHookDetach:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookDetach
+  grapplingHookDetach: {fileID: 0}
+  bundleGrapplingHookLaunch:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookLaunch
+  grapplingHookLaunch: {fileID: 0}
+  bundleGrapplingHookMiss:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookMiss
+  grapplingHookMiss: {fileID: 0}
+  bundleGrapplingHookReeling:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookReeling
+  grapplingHookReeling: {fileID: 0}
+  bundleGrapplingHookReset:
+    assetBundle: Audio_Collection
+    assetName: GrapplingHookReset
+  grapplingHookReset: {fileID: 0}
+  bundleKickerDetach:
+    assetBundle: Audio_Collection
+    assetName: KickerDetach
+  kickerDetach: {fileID: 0}
+  bundleSuperGlueApplied:
+    assetBundle: Audio_Collection
+    assetName: SuperGlueApplied
+  SuperGlueApplied: {fileID: 0}
+  bundleSuperMagnetApplied:
+    assetBundle: Audio_Collection
+    assetName: SuperMagnetApplied
+  SuperMagnetApplied: {fileID: 0}
+  bundleTurboChargeApplied:
+    assetBundle: Audio_Collection
+    assetName: TurboChargeApplied
+  TurboChargeApplied: {fileID: 0}
+  bundleCollisionMetalHit:
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionHit
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionHit2
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionHit3
+  collisionMetalHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleCollisionMetalDamage:
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionDamage
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionDamage2
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionDamage3
+  collisionMetalDamage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleCollisionMetalBreak:
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionBreak
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionBreak2
+  - assetBundle: Audio_Collection
+    assetName: MetalCollisionBreak3
+  collisionMetalBreak:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleCollisionWoodHit:
+  - assetBundle: Audio_Collection
+    assetName: WoodCollisionHit
+  - assetBundle: Audio_Collection
+    assetName: WoodCollisionHit2
+  - assetBundle: Audio_Collection
+    assetName: WoodCollisionHit3
+  collisionWoodHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleCollisionWoodDamage:
+  - assetBundle: Audio_Collection
+    assetName: WoodDamage
+  - assetBundle: Audio_Collection
+    assetName: WoodDamage2
+  - assetBundle: Audio_Collection
+    assetName: WoodDamage3
+  collisionWoodDamage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleCollisionWoodDestroy:
+  - assetBundle: Audio_Collection
+    assetName: WoodDestroyed
+  - assetBundle: Audio_Collection
+    assetName: WoodDestroyed2
+  - assetBundle: Audio_Collection
+    assetName: WoodDestroyed3
+  - assetBundle: Audio_Collection
+    assetName: WoodDestroyed4
+  - assetBundle: Audio_Collection
+    assetName: WoodDestroyed5
+  collisionWoodDestroy:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleTutorialIn:
+    assetBundle: Audio_Collection
+    assetName: tutorial_book_appears_v01
+  tutorialIn: {fileID: 0}
+  bundleTutorialOut:
+    assetBundle: Audio_Collection
+    assetName: tutorial_book_disappears_v01
+  tutorialOut: {fileID: 0}
+  bundleTutorialFlip:
+    assetBundle: Audio_Collection
+    assetName: pageturn_v01
+  tutorialFlip: {fileID: 0}
+  bundleCameraZoomIn:
+    assetBundle: Audio_Collection
+    assetName: zoom_in_v01
+  cameraZoomIn: {fileID: 0}
+  bundleCameraZoomOut:
+    assetBundle: Audio_Collection
+    assetName: zoom_out_v01
+  cameraZoomOut: {fileID: 0}
+  bundleJokerLevelUnlocked:
+    assetBundle: Audio_Collection
+    assetName: unlock_secretlevel_v01
+  jokerLevelUnlocked: {fileID: 0}
+  bundleSandboxLevelUnlocked:
+    assetBundle: Audio_Collection
+    assetName: unlock_sandbox_v02
+  sandboxLevelUnlocked: {fileID: 0}
+  bundleBirdWakeUp:
+    assetBundle: Audio_Collection
+    assetName: BirdWakeUp
+  birdWakeUp: {fileID: 0}
+  bundleBirdShot:
+    assetBundle: Audio_Collection
+    assetName: BirdShot
+  birdShot: {fileID: 0}
+  bundleSlingshotStretched:
+    assetBundle: Audio_Collection
+    assetName: SlingshotStretched
+  slingshotStretched: {fileID: 0}
+  bundlePartSlideOnIceLoop:
+  - assetBundle: Audio_Collection
+    assetName: PartSlideOnIceLoop1
+  partSlideOnIceLoop:
+  - {fileID: 0}
+  bundleMotorWheelOnIceStart:
+    assetBundle: Audio_Collection
+    assetName: MotorWheelOnIceStart
+  motorWheelOnIceStart: {fileID: 0}
+  bundleMotorWheelOnIceLoop:
+    assetBundle: Audio_Collection
+    assetName: MotorWheelOnIceLoop
+  motorWheelOnIceLoop: {fileID: 0}
+  bundleGearboxSwitch:
+    assetBundle: Audio_Collection
+    assetName: GearboxSwitch
+  gearboxSwitch: {fileID: 0}
+  bundleEnvironmentFanStart:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentFanStart
+  environmentFanStart: {fileID: 0}
+  bundleEnvironmentFanLoop:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentFanLoop
+  environmentFanLoop: {fileID: 0}
+  bundleToggleNightVision:
+    assetBundle: Audio_Collection
+    assetName: NightVisionApplied
+  toggleNightVision: {fileID: 0}
+  bundleToggleLamp:
+    assetBundle: Audio_Collection
+    assetName: FlashLightToggle
+  toggleLamp: {fileID: 0}
+  bundleAncientPigDisappear:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentAncientPigDisappear
+  ancientPigDisappear: {fileID: 0}
+  bundleGoldenPigHit:
+  - assetBundle: Audio_Collection
+    assetName: GoldenPigHit01
+  - assetBundle: Audio_Collection
+    assetName: GoldenPigHit02
+  - assetBundle: Audio_Collection
+    assetName: GoldenPigHit03
+  goldenPigHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleGoldenPigRoll:
+    assetBundle: Audio_Collection
+    assetName: GoldenPigRoll
+  goldenPigRoll: {fileID: 0}
+  bundleSecretStatueFound:
+    assetBundle: Audio_Collection
+    assetName: SuperMagnetApplied
+  secretStatueFound: {fileID: 0}
+  bundlePigFall:
+    assetBundle: Audio_Collection
+    assetName: PigFall7
+  pigFall: {fileID: 0}
+  bundleBridgeBreak:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentBridgeCrack
+  bridgeBreak: {fileID: 0}
+  bundlePressureButtonClick:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentPressureButtonClick
+  pressureButtonClick: {fileID: 0}
+  bundlePressureButtonRelease:
+    assetBundle: Audio_Collection
+    assetName: EnvironmentPressureButtonRelease
+  pressureButtonRelease: {fileID: 0}
+  bundleCollisionRockBreak:
+  - assetBundle: Audio_Collection
+    assetName: EnvironmentRockBreak01
+  - assetBundle: Audio_Collection
+    assetName: EnvironmentRockBreak02
+  - assetBundle: Audio_Collection
+    assetName: EnvironmentRockBreak03
+  collisionRockBreak:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleSnoutCoinHit:
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinHit_01
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinHit_02
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinHit_03
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinHit_04
+  snoutCoinHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleSnoutCoinFly:
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinFly_01
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinFly_02
+  - assetBundle: Audio_Collection
+    assetName: SnoutCoinFly_03
+  snoutCoinFly:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleSnoutCoinPurchase:
+    assetBundle: Audio_Collection
+    assetName: SnoutCoinPurchase
+  snoutCoinPurchase: {fileID: 0}
+  bundleSnoutCoinIntro:
+    assetBundle: Audio_Collection
+    assetName: SnoutCoinIntro
+  snoutCoinIntro: {fileID: 0}
+  bundleSnoutCoinUse:
+    assetBundle: Audio_Collection
+    assetName: SnoutCoinUse
+  snoutCoinUse: {fileID: 0}
+  bundleSnoutCoinUnlock:
+    assetBundle: Audio_Collection
+    assetName: SnoutCoinUnlock
+  snoutCoinUnlock: {fileID: 0}
+  bundleInactiveButton:
+    assetBundle: Audio_Collection
+    assetName: ui_inactive
+  inactiveButton: {fileID: 0}
+  bundleToggleEpisode:
+    assetBundle: Audio_Collection
+    assetName: ui_switchtabs
+  toggleEpisode: {fileID: 0}
+  bundleSnoutCoinCounterLoop:
+    assetBundle: Audio_Collection
+    assetName: SnoutCoinCounterLoop
+  snoutCoinCounterLoop: {fileID: 0}
+  bundleCraftAmbience:
+    assetBundle: Audio_Collection
+    assetName: CraftAmbience
+  craftAmbience: {fileID: 0}
+  bundleCraftEmpty:
+    assetBundle: Audio_Collection
+    assetName: CraftEmpty
+  craftEmpty: {fileID: 0}
+  bundleCraftLeverCrank:
+    assetBundle: Audio_Collection
+    assetName: CraftLeverCrank
+  craftLeverCrank: {fileID: 0}
+  bundleMachineIdles:
+  - assetBundle: Audio_Collection
+    assetName: CraftMachineIdle00
+  - assetBundle: Audio_Collection
+    assetName: CraftMachineIdle01
+  - assetBundle: Audio_Collection
+    assetName: CraftMachineIdle02
+  - assetBundle: Audio_Collection
+    assetName: CraftMachineIdle03
+  machineIdles:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleMachineIntro:
+    assetBundle: Audio_Collection
+    assetName: CraftMachineIntro
+  machineIntro: {fileID: 0}
+  bundleCraftPart:
+    assetBundle: Audio_Collection
+    assetName: CraftPart
+  craftPart: {fileID: 0}
+  bundleEjectScrap:
+    assetBundle: Audio_Collection
+    assetName: EjectScrap
+  ejectScrap: {fileID: 0}
+  bundleEjectScrapButton:
+    assetBundle: Audio_Collection
+    assetName: EjectScrapButton
+  ejectScrapButton: {fileID: 0}
+  bundleInsertScrap:
+    assetBundle: Audio_Collection
+    assetName: InsertScrap
+  insertScrap: {fileID: 0}
+  bundleLightBulb:
+    assetBundle: Audio_Collection
+    assetName: LightBulb
+  lightBulb: {fileID: 0}
+  bundlePullChain:
+    assetBundle: Audio_Collection
+    assetName: PullChainStart_01
+  pullChain: {fileID: 0}
+  bundleReleaseChain:
+    assetBundle: Audio_Collection
+    assetName: PullChainEnd_01
+  releaseChain: {fileID: 0}
+  bundleGoldenCrateHits:
+  - assetBundle: Audio_Collection
+    assetName: GoldenCrateHit01
+  - assetBundle: Audio_Collection
+    assetName: GoldenCrateHit02
+  - assetBundle: Audio_Collection
+    assetName: GoldenCrateExplosion
+  goldenCrateHits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleMetalCrateHits:
+  - assetBundle: Audio_Collection
+    assetName: MetalCrateHit01
+  - assetBundle: Audio_Collection
+    assetName: MetalCrateHit02
+  - assetBundle: Audio_Collection
+    assetName: MetalCrateExplosion
+  metalCrateHits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleWoodenCrateHits:
+  - assetBundle: Audio_Collection
+    assetName: WoodenCrateHit01
+  - assetBundle: Audio_Collection
+    assetName: WoodenCrateHit02
+  - assetBundle: Audio_Collection
+    assetName: WoodenCrateExplosion
+  woodenCrateHits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleSalvagePart:
+    assetBundle: Audio_Collection
+    assetName: SalvagePart
+  salvagePart: {fileID: 0}
+  bundleBellowsFarts:
+  - assetBundle: Audio_Collection
+    assetName: EpicBellowsFart01
+  - assetBundle: Audio_Collection
+    assetName: EpicBellowsFart02
+  - assetBundle: Audio_Collection
+    assetName: EpicBellowsFart03
+  - assetBundle: Audio_Collection
+    assetName: EpicBellowsFart04
+  bellowsFarts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleAlienEngineLoop:
+    assetBundle: Audio_Collection
+    assetName: AlienEngineLoop
+  alienEngineLoop: {fileID: 0}
+  bundleGiftTNTExplosion:
+    assetBundle: Audio_Collection
+    assetName: GiftTNTExplosion
+  giftTNTExplosion: {fileID: 0}
+  bundleCratePillowHit:
+  - assetBundle: Audio_Collection
+    assetName: CrateHitsPillow_01
+  - assetBundle: Audio_Collection
+    assetName: CrateHitsPillow_02
+  cratePillowHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  bundlePillowDrops:
+  - assetBundle: Audio_Collection
+    assetName: PillowDrops_01
+  - assetBundle: Audio_Collection
+    assetName: PillowDrops_02
+  pillowDrops:
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleNutFly:
+  - assetBundle: Audio_Collection
+    assetName: NutFly_01
+  - assetBundle: Audio_Collection
+    assetName: NutFly_02
+  - assetBundle: Audio_Collection
+    assetName: NutFly_03
+  - assetBundle: Audio_Collection
+    assetName: NutFly_04
+  nutFly:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleNutHit:
+  - assetBundle: Audio_Collection
+    assetName: NutHit_01
+  - assetBundle: Audio_Collection
+    assetName: NutHit_02
+  - assetBundle: Audio_Collection
+    assetName: NutHit_03
+  - assetBundle: Audio_Collection
+    assetName: NutHit_04
+  - assetBundle: Audio_Collection
+    assetName: NutHit_05
+  - assetBundle: Audio_Collection
+    assetName: NutHit_06
+  - assetBundle: Audio_Collection
+    assetName: NutHit_07
+  - assetBundle: Audio_Collection
+    assetName: NutHit_08
+  - assetBundle: Audio_Collection
+    assetName: NutHit_09
+  nutHit:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleLootcrateEpicWow:
+    assetBundle: Audio_Collection
+    assetName: EpicWow_01
+  lootcrateEpicWow: {fileID: 0}
+  bundlePartCraftedJingle:
+    assetBundle: Audio_Collection
+    assetName: PartCrafted_01
+  partCraftedJingle: {fileID: 0}
+  bundleRewardBounce:
+  - assetBundle: Audio_Collection
+    assetName: RewardBouncePillow_01
+  - assetBundle: Audio_Collection
+    assetName: RewardBouncePillow_02
+  - assetBundle: Audio_Collection
+    assetName: RewardBouncePillow_03
+  - assetBundle: Audio_Collection
+    assetName: RewardBouncePillow_04
+  - assetBundle: Audio_Collection
+    assetName: RewardBouncePillow_05
+  rewardBounce:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleLootWheelTickSounds:
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_01
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_02
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_03
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_04
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_05
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_06
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_07
+  - assetBundle: Audio_Collection
+    assetName: spinwheel_tick_08
+  lootWheelTickSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleLootWheelJackPot:
+    assetBundle: Audio_Collection
+    assetName: jackpot_price_fly_land_01
+  lootWheelJackPot: {fileID: 0}
+  bundleLootWheelPrizeFly:
+    assetBundle: Audio_Collection
+    assetName: prize_fly_01
+  lootWheelPrizeFly: {fileID: 0}
+  bundleLootWheelStarExplosion:
+    assetBundle: Audio_Collection
+    assetName: prize_stars_explosion_01
+  lootWheelStarExplosion: {fileID: 0}
+  bundleConfetti:
+    assetBundle: Audio_Collection
+    assetName: confetti_01
+  confetti: {fileID: 0}
+  bundleRefereePigFall:
+    assetBundle: Audio_Collection
+    assetName: refereePig_fall_01
+  refereePigFall: {fileID: 0}
+  bundleRefereePigFallImpact:
+    assetBundle: Audio_Collection
+    assetName: refereePig_fall_impact_01
+  refereePigFallImpact: {fileID: 0}
+  bundleRefereePigFlag:
+    assetBundle: Audio_Collection
+    assetName: refereePig_flag_01
+  refereePigFlag: {fileID: 0}
+  bundleRefereePigImpact:
+    assetBundle: Audio_Collection
+    assetName: refereePig_impact_01
+  refereePigImpact: {fileID: 0}
+  bundleRefereePigWhistle:
+    assetBundle: Audio_Collection
+    assetName: refereePig_whistle_01
+  refereePigWhistle: {fileID: 0}
+  bundleSafeDrop:
+    assetBundle: Audio_Collection
+    assetName: safe_drop_01
+  safeDrop: {fileID: 0}
+  bundleScoreCountDown:
+  - assetBundle: Audio_Collection
+    assetName: scorecount_down_01
+  - assetBundle: Audio_Collection
+    assetName: scorecount_down_02
+  - assetBundle: Audio_Collection
+    assetName: scorecount_down_03
+  - assetBundle: Audio_Collection
+    assetName: scorecount_down_04
+  - assetBundle: Audio_Collection
+    assetName: scorecount_down_05
+  scoreCountDown:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleScoreCountUp:
+  - assetBundle: Audio_Collection
+    assetName: scorecount_up_01
+  - assetBundle: Audio_Collection
+    assetName: scorecount_up_02
+  - assetBundle: Audio_Collection
+    assetName: scorecount_up_03
+  - assetBundle: Audio_Collection
+    assetName: scorecount_up_04
+  - assetBundle: Audio_Collection
+    assetName: scorecount_up_05
+  scoreCountUp:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleWinTrumpet:
+  - assetBundle: Audio_Collection
+    assetName: win_trumpet_01
+  - assetBundle: Audio_Collection
+    assetName: win_trumpet_02
+  winTrumpet:
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleYouWinPillowAppear:
+    assetBundle: Audio_Collection
+    assetName: you_win_pillow_appear_01
+  youWinPillowAppear: {fileID: 0}
+  bundleXPGain:
+  - assetBundle: Audio_Collection
+    assetName: gain_xp_01
+  - assetBundle: Audio_Collection
+    assetName: gain_xp_02
+  - assetBundle: Audio_Collection
+    assetName: gain_xp_03
+  - assetBundle: Audio_Collection
+    assetName: gain_xp_04
+  - assetBundle: Audio_Collection
+    assetName: gain_xp_05
+  xpGain:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleGhostBalloonPop:
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_pop_01
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_pop_02
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_pop_03
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_pop_04
+  ghostBalloonPop:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleGhostBalloonWail:
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_wail_01
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_wail_02
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_wail_03
+  - assetBundle: Audio_Collection
+    assetName: balloon_ghost_wail_04
+  ghostBalloonWail:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleMarbleCrateHits:
+  - assetBundle: Audio_Collection
+    assetName: MarbleCrateHit01
+  - assetBundle: Audio_Collection
+    assetName: MarbleCrateHit02
+  - assetBundle: Audio_Collection
+    assetName: MarbleCrateExplosion
+  marbleCrateHits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleGlassCrateHits:
+  - assetBundle: Audio_Collection
+    assetName: GlassCrateHit01
+  - assetBundle: Audio_Collection
+    assetName: GlassCrateHit02
+  - assetBundle: Audio_Collection
+    assetName: GlassCrateExplosion
+  glassCrateHits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleTimeBombAlarm:
+  - assetBundle: Audio_Collection
+    assetName: bomb_alarm_01
+  - assetBundle: Audio_Collection
+    assetName: bomb_alarm_02
+  timeBombAlarm:
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleAlienLaserFire:
+  - assetBundle: Audio_Collection
+    assetName: AlienGrapplingHookLaunch1
+  - assetBundle: Audio_Collection
+    assetName: AlienGrapplingHookLaunch2
+  alienLaserFire:
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleAlienFan:
+    assetBundle: Audio_Collection
+    assetName: AlienFanLoop
+  alienFan: {fileID: 0}
+  bundleAlienRotor:
+    assetBundle: Audio_Collection
+    assetName: AlienRotorLoop
+  alienRotor: {fileID: 0}
+  bundleJingleBell:
+    assetBundle: Audio_Collection
+    assetName: SFX_Jingle_Bell
+  jingleBell: {fileID: 0}
+  bundleAlienSodaBottleStart:
+    assetBundle: Audio_Collection
+    assetName: AlienBottleCork
+  alienSodaBottleStart: {fileID: 0}
+  bundleAlienSodaBottleLoop:
+    assetBundle: Audio_Collection
+    assetName: AlienBottleLaunch
+  alienSodaBottleLoop: {fileID: 0}
+  bundleAlienBeepBoop:
+    assetBundle: Audio_Collection
+    assetName: AlienBeepBoop
+  alienBeepBoop: {fileID: 0}
+  bundleAlienLanguage:
+  - assetBundle: Audio_Collection
+    assetName: AlienPigLanguage01
+  - assetBundle: Audio_Collection
+    assetName: AlienPigLanguage02
+  - assetBundle: Audio_Collection
+    assetName: AlienPigLanguage03
+  alienLanguage:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleAlienMachineReveal:
+    assetBundle: Audio_Collection
+    assetName: AlienReveal
+  alienMachineReveal: {fileID: 0}
+  bundleCraftingSlime:
+    assetBundle: Audio_Collection
+    assetName: SlimeCraft
+  craftingSlime: {fileID: 0}
+  bundleAlienBellows:
+  - assetBundle: Audio_Collection
+    assetName: AlienBellow01
+  - assetBundle: Audio_Collection
+    assetName: AlienBellow02
+  - assetBundle: Audio_Collection
+    assetName: AlienBellow03
+  alienBellows:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleAlienPunch:
+    assetBundle: Audio_Collection
+    assetName: AlienSpringBoxingGloveHit
+  alienPunch: {fileID: 0}
+  bundleScoreAnticipation:
+  - assetBundle: Audio_Collection
+    assetName: score_anticipation_01
+  - assetBundle: Audio_Collection
+    assetName: score_anticipation_02
+  - assetBundle: Audio_Collection
+    assetName: score_anticipation_03
+  scoreAnticipation:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  bundleScoreImpact:
+    assetBundle: Audio_Collection
+    assetName: score_impact_01
+  scoreImpact: {fileID: 0}

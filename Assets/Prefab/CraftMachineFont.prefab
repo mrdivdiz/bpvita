@@ -1,0 +1,159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1414135687815311}
+  m_IsPrefabParent: 1
+--- !u!1 &1414135687815311
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4622512117445008}
+  - component: {fileID: 33429843892330677}
+  - component: {fileID: 23878014656929416}
+  - component: {fileID: 114529211593317972}
+  - component: {fileID: 114720833466545399}
+  m_Layer: 0
+  m_Name: CraftMachineFont
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4622512117445008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414135687815311}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.47409, y: 4.510474, z: -1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33429843892330677
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414135687815311}
+  m_Mesh: {fileID: 0}
+--- !u!23 &23878014656929416
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414135687815311}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6267dd1a05e790a24087176f3fbd5c06, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &114529211593317972
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414135687815311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac33d3deec056280496ee4d4fbec6a29, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_id: 622099e5-0516-4404-8bb1-fe83ab524305
+  m_scaleX: 1
+  m_scaleY: 1
+  m_pivotX: 0
+  m_pivotY: 0
+  m_updateCollider: 1
+--- !u!114 &114720833466545399
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414135687815311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afb628f953f50d8341b45e11c5e2735d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  m_symbols:
+  - symbol: 0
+    spriteId: 622cc5d8-19ae-44b4-8dce-0b40efc28fe7
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 1
+    spriteId: 43ad7604-a4c3-434f-958d-bf5f27d4de5a
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 2
+    spriteId: 622099e5-0516-4404-8bb1-fe83ab524305
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 3
+    spriteId: 37f4604d-7559-41db-ba96-af10abf1356a
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 4
+    spriteId: 677307a6-1039-40b9-87ae-fdfba9bd3ecd
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 5
+    spriteId: 28046000-997c-4818-b4d0-49c1f483119e
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 6
+    spriteId: 7aa246bc-e7b0-4721-9eeb-2830ac5b2280
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 7
+    spriteId: 64b3f838-77e5-4ee7-851c-a73047841fc5
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 8
+    spriteId: 51993203-722e-4767-bcc7-41e25fbbccc9
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: 9
+    spriteId: 89171bb9-2d01-4985-a603-19eed331f224
+    spriteScaleX: 1
+    spriteScaleY: 1
+  - symbol: /
+    spriteId: 3a3488d6-f6a9-42d5-bda1-41766a79e6a6
+    spriteScaleX: 1
+    spriteScaleY: 1
