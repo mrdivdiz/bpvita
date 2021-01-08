@@ -231,6 +231,7 @@ public class e2dTerrainCurveMesh : e2dTerrainMesh
 			array[j].SetFloat("_InvControlSize", 1f / (float)this.ControlTextures[j].width);
 			array[j].SetFloat("_InvControlSizeHalf", 0.5f / (float)this.ControlTextures[j].width);
 			array[j].SetTexture("_Control", this.ControlTextures[j]);
+			array[j].SetTexture("_MainTex", base.CurveTextures[num].texture);
 			int k = 0;
 			/*while (k < e2dConstants.NUM_TEXTURES_PER_STRIPE_SHADER)
 			{
