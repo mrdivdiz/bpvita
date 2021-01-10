@@ -10,6 +10,7 @@ public class Singleton<T> : MonoBehaviour where T : MonoBehaviour
 			{
 				Singleton<T>.instance = UnityEngine.Object.FindObjectOfType<T>();
 			}
+			PlayerPrefs.Save();
 			return Singleton<T>.instance;
 		}
 	}

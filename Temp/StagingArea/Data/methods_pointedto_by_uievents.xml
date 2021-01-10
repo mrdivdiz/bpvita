@@ -1,0 +1,11 @@
+<linker>
+	<assembly fullname="IngameDebugConsole.Runtime" ignoreIfMissing="1">
+		<type fullname="IngameDebugConsole.DebugsOnScrollListener">
+			<method name="OnScrollbarDragStart"/>
+			<method name="OnScrollbarDragEnd"/>
+		</type>
+		<type fullname="IngameDebugConsole.DebugLogItem">
+			<method name="CopyLog"/>
+		</type>
+	</assembly>
+</linker>

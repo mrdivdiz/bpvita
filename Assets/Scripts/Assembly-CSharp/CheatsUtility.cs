@@ -724,7 +724,10 @@ public class CheatsUtility : WPFMonoBehaviour
 		}));
 		if (GUI.Button(new Rect((float)Screen.width * 0.2f, (float)Screen.height * 0.92f, (float)Screen.width * 0.6f, (float)Screen.height * 0.08f), "Back to Main Menu"))
 		{
+			GameProgress.Save();
+			PlayerPrefs.Save();
 			Singleton<GameManager>.Instance.LoadMainMenu(false);
+			
 		}
 		GUI.skin = null;
 	}
