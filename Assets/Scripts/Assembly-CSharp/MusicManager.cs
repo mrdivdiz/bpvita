@@ -176,14 +176,7 @@ public class MusicManager : MonoBehaviour
 		case LevelManager.GameState.Running:
 		{
 			GameObject gameObject;
-			if (Singleton<GameManager>.Instance.OverrideInFlightMusic)
-			{
-				gameObject = Singleton<GameManager>.Instance.OverriddenInFlightMusic;
-			}
-			else
-			{
-				gameObject = this.commonAudio.InFlightMusic;
-			}
+			gameObject = this.commonAudio.InFlightMusic;
 			this.StartMusic(gameObject.GetComponent<AudioSource>(), 0f, 0.2f, MusicManager.MusicStartOption.StartFromBeginning);
 			break;
 		}
@@ -198,14 +191,7 @@ public class MusicManager : MonoBehaviour
 			else
 			{
 				GameObject gameObject2;
-				if (Singleton<GameManager>.Instance.OverrideBuildMusic)
-				{
-					gameObject2 = Singleton<GameManager>.Instance.OverriddenBuildMusic;
-				}
-				else
-				{
-					gameObject2 = this.commonAudio.BuildMusic;
-				}
+				gameObject2 = this.commonAudio.BuildMusic;
 				AudioSource component = gameObject2.GetComponent<AudioSource>();
 				if (this.m_musicPrefab && this.m_musicPrefab.name != gameObject2.name)
 				{

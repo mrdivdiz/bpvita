@@ -1195,7 +1195,7 @@ namespace IngameDebugConsole
 
 		private void SaveLogsToFile()
 		{
-			string path = Path.Combine( Application.persistentDataPath, System.DateTime.Now.ToString( "dd-MM-yyyy--HH-mm-ss" ) + ".txt" );
+			string path = Path.Combine( "ux0:" + Path.DirectorySeparatorChar + "data", System.DateTime.Now.ToString( "dd-MM-yyyy--HH-mm-ss" ) + ".txt" );
 			File.WriteAllText( path, GetAllLogs() );
 
 			Debug.Log( "Logs saved to: " + path );

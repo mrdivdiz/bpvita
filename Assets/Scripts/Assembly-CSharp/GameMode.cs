@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public abstract class GameMode
 {
@@ -99,10 +100,13 @@ public abstract class GameMode
                 {
                     this.levelManager.CheckForLevelStartAchievements();
                     LevelManager.GameState gameState = (this.levelManager.gameState != LevelManager.GameState.Building) ? LevelManager.GameState.Continue : LevelManager.GameState.Running;
-                    //if (this.levelManager.gameState == LevelManager.GameState.Building)
-                    //{
-                        //Singleton<AudioManager>.Instance.Play2dEffect(this.gameData.commonAudioCollection.buildContraption);
-                    //}
+                    if (this.levelManager.gameState == LevelManager.GameState.Building)
+                    {
+						Debug.Log("Path: " + System.IO.Directory.GetCurrentDirectory());
+                        Singleton<AudioManager>.Instance.Play2dEffect((AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "ui_button_back"));
+                    //Singleton<AudioManager>.Instance.Play2dEffect(Resources.Load<AudioClip>(Application.dataPath +  Path.DirectorySeparatorChar + "AudioClip" + Path.DirectorySeparatorChar + "ui_button_back.wav")));
+					//Resources.Load<AudioClip>("Sounds/whatever_audio_fx");
+					}
                     this.levelManager.SetGameState(gameState);
                 }
                 break;

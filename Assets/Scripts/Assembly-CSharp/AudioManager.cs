@@ -44,7 +44,7 @@ public class AudioManager : Singleton<AudioManager>
 
     public void Play2dEffect(AudioClip effectClip)
     {
-        if (!this.AudioMuted && this.CheckRepeatLimit(ref effectClip))
+        if (!this.AudioMuted)
         {
             AudioSource.PlayClipAtPoint(effectClip, Vector3.zero);
         }

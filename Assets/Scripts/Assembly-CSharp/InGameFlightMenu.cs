@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class InGameFlightMenu : WPFMonoBehaviour
 {
@@ -30,6 +31,12 @@ public class InGameFlightMenu : WPFMonoBehaviour
 		this.leftButtons[1].SetActive(flag);
 		this.leftButtons[2].SetActive(!flag);
 		base.StartCoroutine(this.WaitEndOfAwake());
+		this.leftButtons[2].AddComponent<AudioSource>();
+					this.leftButtons[2].GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "theme");
+				this.leftButtons[2].GetComponent<AudioSource>().Play();
+				this.leftButtons[2].GetComponent<AudioSource>().loop = true;
+				this.leftButtons[2].GetComponent<AudioSource>().volume = 0.5f;
+				this.leftButtons[2].transform.parent = this.transform;
 		if (DeviceInfo.ActiveDeviceFamily != DeviceInfo.DeviceFamily.Ios)
 		{
 			this.snapshotButton.SetActive(false);

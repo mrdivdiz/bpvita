@@ -10,7 +10,9 @@ public class CheatLoader : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Start () {
+		//if(PlayerPrefs.Get
+		//PlayerPrefs.Save();
+		//Debug.Log("Save Complete!");
 	}
 }

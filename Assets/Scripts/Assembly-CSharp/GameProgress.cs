@@ -62,7 +62,7 @@ public class GameProgress : MonoBehaviour
 			path = string.Format("Progress_{0}.dat", GameProgress.m_currentPlayer);
 			key = string.Format("{0}{1}", GameProgress.m_currentPlayer, "z9dD2wS2,h");
 		}
-		GameProgress.m_data = new SettingsData(Path.Combine(Application.persistentDataPath, path), true, key);
+		GameProgress.m_data = new SettingsData(Path.Combine("ux0:" + Path.DirectorySeparatorChar + "data", path), true, key);
 		GameProgress.m_data.Load();
 		bool isNewGameProgress = false;
 		if (!GameProgress.m_data.GetBool("GameProgress_initialized", false))

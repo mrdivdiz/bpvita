@@ -1158,6 +1158,7 @@ public class ConstructionUI : WPFMonoBehaviour
 	{
 		if (this.m_grid)
 		{
+			
 			this.m_grid.gameObject.SetActive(enableGrid);
 		}
 		this.partSelector.SetConstructionUI(this);

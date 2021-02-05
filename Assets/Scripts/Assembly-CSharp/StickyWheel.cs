@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class StickyWheel : BasePart
 {
@@ -61,8 +62,14 @@ public class StickyWheel : BasePart
 
 	private void SpawnSound()
 	{
-		this.loopingWheelSound = Singleton<AudioManager>.Instance.SpawnCombinedLoopingEffect(WPFMonoBehaviour.gameData.commonAudioCollection.stickyWheelLoop, base.transform).GetComponent<AudioSource>();
-		this.loopingWheelSound.volume = 0f;
+		//this.loopingWheelSound = Singleton<AudioManager>.Instance.SpawnCombinedLoopingEffect(WPFMonoBehaviour.gameData.commonAudioCollection.stickyWheelLoop, base.transform).GetComponent<AudioSource>();
+		this.loopingWheelSound = new GameObject().AddComponent<AudioSource>();
+					this.loopingWheelSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "wheel_suction_cup_01");
+				this.loopingWheelSound.GetComponent<AudioSource>().Play();
+				this.loopingWheelSound.GetComponent<AudioSource>().loop = true;
+				this.loopingWheelSound.GetComponent<AudioSource>().volume = 0f;
+				this.loopingWheelSound.GetComponent<AudioSource>().pitch = 2f;
+				this.loopingWheelSound.transform.parent = this.transform;
 	}
 
 	public override void InitializeEngine()
@@ -146,7 +153,7 @@ public class StickyWheel : BasePart
 			float num4 = this.SpeedInDirection(this.m_lastForceDirection);
 			float num5 = (num2 - num3) / this.m_maximumSpeed * num4;
 			num5 = Mathf.Clamp(num5, num3, num2);
-			this.loopingWheelSound.pitch = num5;
+			this.loopingWheelSound.pitch = num5 * 2;
 			if (this.m_hasContact)
 			{
 				this.loopingWheelSound.volume = 0.15f * (Mathf.Abs(this.m_spinSpeed) / num - 1f);

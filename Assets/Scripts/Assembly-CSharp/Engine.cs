@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.IO;
 
 public class Engine : BasePart
 {
@@ -61,21 +62,42 @@ public class Engine : BasePart
 			{
 				if (partType == BasePart.PartType.EngineBig)
 				{
-					//this.m_engineSound = WPFMonoBehaviour.gameData.commonAudioCollection.V8Engine;
+					this.m_engineSound = new GameObject().AddComponent<AudioSource>();
+					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "V8_engine");
+				this.m_engineSound.GetComponent<AudioSource>().Play();
+				this.m_engineSound.GetComponent<AudioSource>().loop = true;
+				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				this.m_engineSound.transform.parent = this.transform;
 				}
 			}
 			else
 			{
-				//this.m_engineSound = WPFMonoBehaviour.gameData.commonAudioCollection.engine;
+				this.m_engineSound = new GameObject().AddComponent<AudioSource>();
+					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
+				this.m_engineSound.GetComponent<AudioSource>().Play();
+				this.m_engineSound.GetComponent<AudioSource>().loop = true;
+				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				this.m_engineSound.transform.parent = this.transform;
 			}
 		}
 		else if (base.HasTag("Alien"))
 		{
-			//this.m_engineSound = WPFMonoBehaviour.gameData.commonAudioCollection.alienEngineLoop;
+			this.m_engineSound = new GameObject().AddComponent<AudioSource>();
+					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "alien_engine_loop_01");
+				this.m_engineSound.GetComponent<AudioSource>().Play();
+				this.m_engineSound.GetComponent<AudioSource>().loop = true;
+				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				this.m_engineSound.transform.parent = this.transform;
 		}
 		else
 		{
-			//this.m_engineSound = WPFMonoBehaviour.gameData.commonAudioCollection.electricEngine;
+			this.m_engineSound = new GameObject().AddComponent<AudioSource>();
+					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
+				this.m_engineSound.GetComponent<AudioSource>().Play();
+				this.m_engineSound.GetComponent<AudioSource>().loop = true;
+				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				this.m_engineSound.transform.parent = this.transform;
+			
 		}
 	}
 

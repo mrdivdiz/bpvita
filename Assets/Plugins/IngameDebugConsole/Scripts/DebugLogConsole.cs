@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Reflection;
 using System.Text;
+using System.IO;
 using Object = UnityEngine.Object;
 
 // Manages the console commands, parses console input and handles execution of commands
@@ -178,7 +179,7 @@ namespace IngameDebugConsole
 				.Append( "MB " ).Append( SystemInfo.graphicsDeviceVersion )
 				.Append( SystemInfo.graphicsMultiThreaded ? " multi-threaded\n" : "\n" );
 			stringBuilder.Append( "Data Path: " ).Append( Application.dataPath ).Append( "\n" );
-			stringBuilder.Append( "Persistent Data Path: " ).Append( Application.persistentDataPath ).Append( "\n" );
+			stringBuilder.Append( "Persistent Data Path: " ).Append( "ux0:" + Path.DirectorySeparatorChar + "data" ).Append( "\n" );
 			stringBuilder.Append( "StreamingAssets Path: " ).Append( Application.streamingAssetsPath ).Append( "\n" );
 			stringBuilder.Append( "Temporary Cache Path: " ).Append( Application.temporaryCachePath ).Append( "\n" );
 			stringBuilder.Append( "Device ID: " ).Append( SystemInfo.deviceUniqueIdentifier ).Append( "\n" );

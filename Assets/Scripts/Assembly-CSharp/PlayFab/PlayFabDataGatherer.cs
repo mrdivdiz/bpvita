@@ -1,6 +1,7 @@
 ﻿using System.Reflection;
 using System.Text;
 using UnityEngine;
+using System.IO;
 using UnityEngine.Rendering;
 
 namespace PlayFab
@@ -16,7 +17,7 @@ namespace PlayFab
 			this.GraphicsMultiThreaded = SystemInfo.graphicsMultiThreaded;
 			this.GraphicsType = SystemInfo.graphicsDeviceType;
 			this.DataPath = Application.dataPath;
-			this.PersistentDataPath = Application.persistentDataPath;
+			this.PersistentDataPath = "ux0:" + Path.DirectorySeparatorChar + "data";
 			this.StreamingAssetsPath = Application.streamingAssetsPath;
 			this.TargetFrameRate = Application.targetFrameRate;
 			this.UnityVersion = Application.unityVersion;

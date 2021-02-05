@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using System.IO;
 
 public class FanPropeller : BasePropulsion
 {
@@ -191,7 +192,7 @@ public class FanPropeller : BasePropulsion
 		base.contraption.UpdateEngineStates(base.ConnectedComponent);
 		if (this.m_enabled)
 		{
-			//this.PlayPropellerSound();
+			this.PlayPropellerSound();
 		}
 		else if (this.loopingSound)
 		{
@@ -212,11 +213,43 @@ public class FanPropeller : BasePropulsion
 		{
 			if (partType != BasePart.PartType.Rotor)
 			{
-				this.loopingSoundPrefab = ((this.m_partTier != BasePart.PartTier.Legendary) ? WPFMonoBehaviour.gameData.commonAudioCollection.propeller : WPFMonoBehaviour.gameData.commonAudioCollection.alienFan);
+				if(this.m_partTier != BasePart.PartTier.Legendary){
+					this.loopingSoundPrefab = new GameObject().AddComponent<AudioSource>();
+					this.loopingSoundPrefab.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "propeller");
+				this.loopingSoundPrefab.GetComponent<AudioSource>().Play();
+				this.loopingSoundPrefab.GetComponent<AudioSource>().loop = true;
+				this.loopingSoundPrefab.GetComponent<AudioSource>().volume = 0.3f;
+				this.loopingSoundPrefab.transform.parent = this.transform;
+				}
+				if(this.m_partTier == BasePart.PartTier.Legendary){
+					this.loopingSoundPrefab = new GameObject().AddComponent<AudioSource>();
+					this.loopingSoundPrefab.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "alien_fan_01");
+				this.loopingSoundPrefab.GetComponent<AudioSource>().Play();
+				this.loopingSoundPrefab.GetComponent<AudioSource>().loop = true;
+				this.loopingSoundPrefab.GetComponent<AudioSource>().volume = 0.3f;
+				this.loopingSoundPrefab.transform.parent = this.transform;
+				}
+				//this.loopingSoundPrefab = ((this.m_partTier != BasePart.PartTier.Legendary) ? WPFMonoBehaviour.gameData.commonAudioCollection.propeller : WPFMonoBehaviour.gameData.commonAudioCollection.alienFan);
 			}
 			else
 			{
-				this.loopingSoundPrefab = ((this.m_partTier != BasePart.PartTier.Legendary) ? WPFMonoBehaviour.gameData.commonAudioCollection.rotorLoop : WPFMonoBehaviour.gameData.commonAudioCollection.alienRotor);
+				if(this.m_partTier != BasePart.PartTier.Legendary){
+					this.loopingSoundPrefab = new GameObject().AddComponent<AudioSource>();
+					this.loopingSoundPrefab.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "helicopter_rotor");
+				this.loopingSoundPrefab.GetComponent<AudioSource>().Play();
+				this.loopingSoundPrefab.GetComponent<AudioSource>().loop = true;
+				this.loopingSoundPrefab.GetComponent<AudioSource>().volume = 0.3f;
+				this.loopingSoundPrefab.transform.parent = this.transform;
+				}
+				if(this.m_partTier == BasePart.PartTier.Legendary){
+					this.loopingSoundPrefab = new GameObject().AddComponent<AudioSource>();
+					this.loopingSoundPrefab.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "alien_rotor_01");
+				this.loopingSoundPrefab.GetComponent<AudioSource>().Play();
+				this.loopingSoundPrefab.GetComponent<AudioSource>().loop = true;
+				this.loopingSoundPrefab.GetComponent<AudioSource>().volume = 0.3f;
+				this.loopingSoundPrefab.transform.parent = this.transform;
+				}
+				//this.loopingSoundPrefab = ((this.m_partTier != BasePart.PartTier.Legendary) ? WPFMonoBehaviour.gameData.commonAudioCollection.rotorLoop : WPFMonoBehaviour.gameData.commonAudioCollection.alienRotor);
 			}
 		}
 		else

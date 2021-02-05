@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
+using System.IO;
 
 public class UserSettings : MonoBehaviour
 {
 	private void Awake()
 	{
-		UserSettings.m_data = new SettingsData(Application.persistentDataPath + "/Settings.xml", false, string.Empty);
+		UserSettings.m_data = new SettingsData("ux0:" + Path.DirectorySeparatorChar + "data" + Path.DirectorySeparatorChar + "Settings.xml", false, string.Empty);
 		UserSettings.m_data.Load();
 		UnityEngine.Object.DontDestroyOnLoad(this);
 	}

@@ -9,7 +9,7 @@ public class WPFPrefs : UnityEngine.Object
 	public static void WriteGhostPlayerData(string filename, GhostPlayer gp)
 	{
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(GhostPlayer));
-		FileStream fileStream = new FileStream(Application.persistentDataPath + "/" + filename, FileMode.Create);
+		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + "/" + filename, FileMode.Create);
 		xmlSerializer.Serialize(fileStream, gp);
 		fileStream.Close();
 	}
@@ -20,7 +20,7 @@ public class WPFPrefs : UnityEngine.Object
 		GhostPlayer result = new GhostPlayer();
 		try
 		{
-			FileStream fileStream = new FileStream(Application.persistentDataPath + "/" + filename, FileMode.Open);
+			FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + "/" + filename, FileMode.Open);
 			result = (xmlSerializer.Deserialize(fileStream) as GhostPlayer);
 			fileStream.Close();
 		}
@@ -37,7 +37,7 @@ public class WPFPrefs : UnityEngine.Object
 	}
 
 	public static void SaveContraptionDataset(string levelName, ContraptionDataset cds)
-	{/*
+	{
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		MemoryStream memoryStream = new MemoryStream();
 		StreamWriter textWriter = new StreamWriter(memoryStream, Encoding.UTF8);
@@ -46,15 +46,15 @@ public class WPFPrefs : UnityEngine.Object
 		memoryStream.Close();
 		byte[] array = WPFPrefs.m_crypto.Encrypt(clearTextBytes);
 		string str = WPFPrefs.ContraptionFileName(levelName);
-		//string text = Application.persistentDataPath + "/contraptions";
+		//string text = "ux0:" + Path.DirectorySeparatorChar + "data" + "/contraptions";
 		//Directory.CreateDirectory(text);
-		FileStream fileStream = new FileStream(Application.persistentDataPath + "/" + str, FileMode.Create);
+		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + "/" + str, FileMode.Create);
 		fileStream.Write(array, 0, array.Length);
 		fileStream.Close();
-	*/}
+	}
 
 	public static void SaveLevelBluePrint(string levelName, ContraptionDataset cds, bool isSuperBlueprint = false, int superBluePrintIndex = 0)
-	{/*
+	{
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		MemoryStream memoryStream = new MemoryStream();
 		StreamWriter textWriter = new StreamWriter(memoryStream, Encoding.UTF8);
@@ -63,19 +63,19 @@ public class WPFPrefs : UnityEngine.Object
 		memoryStream.Close();
 		string path = (!isSuperBlueprint) ? "Data/Contraptions" : "Data/SuperContraptions";
 		string path2 = levelName + "_contraption" + ((!isSuperBlueprint) ? string.Empty : string.Format("_{0:00}", superBluePrintIndex + 1)) + ".xml";
-		string path3 = Path.Combine(Application.dataPath, path);
-		string path4 = Path.Combine(path3, path2);
-		FileStream fileStream = new FileStream(Application.persistentDataPath + path4, FileMode.Create);
+		//string path3 = Path.Combine(Application.dataPath, path);
+		//string path4 = Path.Combine(path, path2);
+		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + path2, FileMode.Create);
 		fileStream.Write(array, 0, array.Length);
 		fileStream.Close();
-	*/}
+	}
 
 	public static ContraptionDataset LoadContraptionDataset(string levelName)
 	{
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		ContraptionDataset result = new ContraptionDataset();
 		string str = WPFPrefs.ContraptionFileName(levelName);
-		string str2 = Application.persistentDataPath;
+		string str2 = "ux0:" + Path.DirectorySeparatorChar + "data";
 		if (!File.Exists(str2 + "/" + str))
 		{
 			return new ContraptionDataset();

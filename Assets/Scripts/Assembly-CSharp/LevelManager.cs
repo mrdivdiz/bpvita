@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -1457,8 +1458,8 @@ public sealed class LevelManager : WPFMonoBehaviour
 
     public void PlayVictorySound()
     {
-        //this.audioManager.Play2dEffect(WPFMonoBehaviour.gameData.commonAudioCollection.clearBuildGrid);
-        //this.audioManager.Play2dEffect(WPFMonoBehaviour.gameData.commonAudioCollection.victory);
+        //this.audioManager.Play2dEffect(Path.Combine(Application.dataPath, "AudioClip","unlock_secretlevel_v01.wav"));
+		this.audioManager.Play2dEffect((AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "unlock_secretlevel_v01"));
     }
 
     private void OnApplicationFocus(bool focus)
