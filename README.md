@@ -5,7 +5,3 @@ use for vita. So I had to backport everything, and for now its running not so
 good, but I will improve everything later.
 Known problems:
 - FIXED
-- No vehicles can be saved due to PSV data management.Solution - use own JSON method in WPFPrefs.cs
-- Most of SFX/BG sounds not working.Caused by asset bundles.If someone could pack two audio bundles
-properly...No solution at the moment.
-- FIXED
