@@ -2,7 +2,7 @@
 {
 	public LevelUpEvent(int newLevel)
 	{
-		this.newLevel = newLevel;
+		//this.newLevel = newLevel;
 	}
 
 	public int newLevel;

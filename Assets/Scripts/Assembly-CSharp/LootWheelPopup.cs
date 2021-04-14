@@ -124,7 +124,7 @@ public class LootWheelPopup : TextDialog
 		base.Open();
 		base.transform.position = WPFMonoBehaviour.hudCamera.transform.position + Vector3.forward * 6f;
 		this.lootWheel.ForceReInit();
-		Singleton<AudioManager>.Instance.Spawn2dOneShotEffect(WPFMonoBehaviour.gameData.commonAudioCollection.jokerLevelUnlocked);
+		//Singleton<AudioManager>.Instance.Spawn2dOneShotEffect(WPFMonoBehaviour.gameData.commonAudioCollection.jokerLevelUnlocked);
 	}
 
 	public void RefreshSpinButtonTranslation()

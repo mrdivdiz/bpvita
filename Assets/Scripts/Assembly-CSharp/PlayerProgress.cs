@@ -143,19 +143,20 @@ public class PlayerProgress : Singleton<PlayerProgress>
 
 	public int AddExperience(ExperienceType experienceType)
 	{
-		int num = this.ExperienceCount(experienceType);
-		this.AddExperience(num);
-		this.SendFlurryExperienceGained(num, experienceType);
+		int num = 0;
+		//int num = this.ExperienceCount(experienceType);
+		//this.AddExperience(num);
+		//this.SendFlurryExperienceGained(num, experienceType);
 		return num;
 	}
 
 	public int AddExperience(ExperienceType[] experienceType)
 	{
 		int num = 0;
-		for (int i = 0; i < experienceType.Length; i++)
-		{
-			num += this.AddExperience(experienceType[i]);
-		}
+		//for (int i = 0; i < experienceType.Length; i++)
+		//{
+		//	num += this.AddExperience(experienceType[i]);
+		//}
 		return num;
 	}
 
