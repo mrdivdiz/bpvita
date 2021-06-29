@@ -30,7 +30,7 @@ public class SnoutCoinSingle : WPFMonoBehaviour
 
 	private void Start()
 	{
-		Singleton<AudioManager>.Instance.SpawnOneShotEffect(WPFMonoBehaviour.gameData.commonAudioCollection.snoutCoinHit, Vector3.zero);
+		//Singleton<AudioManager>.Instance.SpawnOneShotEffect(WPFMonoBehaviour.gameData.commonAudioCollection.snoutCoinHit, Vector3.zero);
 	}
 
 	private void Update()
