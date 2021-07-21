@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class StarBox : OneTimeCollectable
 {
@@ -61,6 +62,12 @@ public class StarBox : OneTimeCollectable
 				num = ((!Singleton<DoubleRewardManager>.Instance.HasDoubleReward) ? num : (num * 2));
 				GameProgress.AddSnoutCoins(num);
 				Singleton<PlayerProgress>.Instance.AddExperience(PlayerProgress.ExperienceType.StarBoxCollectedSandbox);
+				
+				AudioSource win_snd = new GameObject("sbox").AddComponent<AudioSource>();
+				win_snd.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "win_snd");
+				win_snd.GetComponent<AudioSource>().loop = false;
+				win_snd.GetComponent<AudioSource>().volume = 1f;
+				win_snd.GetComponent<AudioSource>().Play();
 				base.ShowXPParticles();
 				for (int i = 0; i < num; i++)
 				{
@@ -69,6 +76,11 @@ public class StarBox : OneTimeCollectable
 			}
 			else if (sandboxStarCollectCount < 1)
 			{
+				AudioSource win_snd = new GameObject("sbox").AddComponent<AudioSource>();
+				win_snd.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "win_snd");
+				win_snd.GetComponent<AudioSource>().loop = false;
+				win_snd.GetComponent<AudioSource>().volume = 1f;
+				win_snd.GetComponent<AudioSource>().Play();
 				GameProgress.AddSandboxStar(Singleton<GameManager>.Instance.CurrentSceneName, base.NameKey, false);
 			}
 		}

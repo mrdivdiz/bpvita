@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
 using System.IO;
+using System;
 
 public class Engine : BasePart
 {
+	
+	public GameObject[] engines;
+//public GameObject[] engines2;
 	public override bool CanBeEnabled()
 	{
 		return true;
@@ -15,7 +19,7 @@ public class Engine : BasePart
 
 	public override bool IsEnabled()
 	{
-		return this.m_running;
+		return m_running;
 	}
 
 	public override bool IsIntegralPart()
@@ -30,92 +34,106 @@ public class Engine : BasePart
 
 	public override bool ValidatePart()
 	{
-		return this.m_enclosedInto != null;
+		return m_enclosedInto != null;
 	}
 
 	public override void Initialize()
 	{
 		base.contraption.m_enginesAmount++;
-		this.m_visualizationPart = base.transform.GetChild(0);
-		this.m_visualizationPartPosition = this.m_visualizationPart.localPosition;
+		m_visualizationPart = base.transform.GetChild(0);
+		m_visualizationPartPosition = m_visualizationPart.localPosition;
 	}
 
 	public override void OnDetach()
 	{
-		this.m_engineBroken = true;
-		if (this.m_running)
+		m_engineBroken = true;
+		if (m_running)
 		{
-			this.SetEnabled(false);
+			SetEnabled(false);
 		}
 		base.contraption.m_enginesAmount--;
-		this.audioManager.RemoveCombinedLoopingEffect(this.m_engineSound, this.loopingSound);
+		audioManager.RemoveCombinedLoopingEffect(m_engineSound, loopingSound);
 		base.OnDetach();
 	}
 
 	private void Start()
 	{
-		this.audioManager = Singleton<AudioManager>.Instance;
-		BasePart.PartType partType = this.m_partType;
+		audioManager = Singleton<AudioManager>.Instance;
+		BasePart.PartType partType = m_partType;
 		if (partType != BasePart.PartType.EngineSmall)
 		{
 			if (partType != BasePart.PartType.Engine)
 			{
 				if (partType == BasePart.PartType.EngineBig)
 				{
-					this.m_engineSound = new GameObject().AddComponent<AudioSource>();
-					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "V8_engine");
-				this.m_engineSound.GetComponent<AudioSource>().Play();
-				this.m_engineSound.GetComponent<AudioSource>().loop = true;
-				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
-				this.m_engineSound.transform.parent = this.transform;
+					m_engineSound = new GameObject("FUCKING_ENGINE_228AE").AddComponent<AudioSource>();
+					m_engineSound.gameObject.tag = "m_engineSetup";
+					m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "V8_engine");
+				//m_engineSound.GetComponent<AudioSource>().Play();
+				m_engineSound.GetComponent<AudioSource>().Stop();
+				m_engineSound.GetComponent<AudioSource>().loop = true;
+				m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				m_engineSound.transform.parent = transform;
 				}
 			}
 			else
 			{
-				this.m_engineSound = new GameObject().AddComponent<AudioSource>();
-					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
-				this.m_engineSound.GetComponent<AudioSource>().Play();
-				this.m_engineSound.GetComponent<AudioSource>().loop = true;
-				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
-				this.m_engineSound.transform.parent = this.transform;
+				m_engineSound = new GameObject("FUCKING_ENGINE_228AE").AddComponent<AudioSource>();
+				m_engineSound.gameObject.tag = "m_engineSetup";
+					m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
+				//m_engineSound.GetComponent<AudioSource>().Play();
+				m_engineSound.GetComponent<AudioSource>().loop = true;
+				m_engineSound.GetComponent<AudioSource>().Stop();
+				m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				m_engineSound.transform.parent = transform;
 			}
 		}
 		else if (base.HasTag("Alien"))
 		{
-			this.m_engineSound = new GameObject().AddComponent<AudioSource>();
-					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "alien_engine_loop_01");
-				this.m_engineSound.GetComponent<AudioSource>().Play();
-				this.m_engineSound.GetComponent<AudioSource>().loop = true;
-				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
-				this.m_engineSound.transform.parent = this.transform;
+			m_engineSound = new GameObject("FUCKING_ENGINE_228AE").AddComponent<AudioSource>();
+			m_engineSound.gameObject.tag = "m_engineSetup";
+					m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "alien_engine_loop_01");
+				//m_engineSound.GetComponent<AudioSource>().Play();
+				m_engineSound.GetComponent<AudioSource>().loop = true;
+				m_engineSound.GetComponent<AudioSource>().Stop();
+				m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				m_engineSound.transform.parent = transform;
 		}
 		else
 		{
-			this.m_engineSound = new GameObject().AddComponent<AudioSource>();
-					this.m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
-				this.m_engineSound.GetComponent<AudioSource>().Play();
-				this.m_engineSound.GetComponent<AudioSource>().loop = true;
-				this.m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
-				this.m_engineSound.transform.parent = this.transform;
+			m_engineSound = new GameObject("FUCKING_ENGINE_228AE").AddComponent<AudioSource>();
+			m_engineSound.gameObject.tag = "m_engineSetup";
+					m_engineSound.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "small_engine_22KHz");
+				//m_engineSound.GetComponent<AudioSource>().Play();
+				m_engineSound.GetComponent<AudioSource>().loop = true;
+				m_engineSound.GetComponent<AudioSource>().Stop();
+				m_engineSound.GetComponent<AudioSource>().volume = 0.3f;
+				m_engineSound.transform.parent = transform;
 			
 		}
+		engines = FindGameObjectsWithName("FUCKING_ENGINE_228AE");
 	}
 
 	private void Update()
 	{
-		if (this.m_running && !this.loopingSound)
+		if (m_running && !loopingSound)
 		{
-			//this.loopingSound = this.audioManager.SpawnCombinedLoopingEffect(this.m_engineSound, base.gameObject.transform);
-			//this.loopingSound.GetComponent<AudioSource>().pitch = Mathf.Clamp(0.8f + 0.1f * (float)base.contraption.m_enginesAmount, 0f, 1f);
+			//loopingSound = audioManager.SpawnCombinedLoopingEffect(m_engineSound, base.gameObject.transform);
+			//loopingSound.GetComponent<AudioSource>().pitch = Mathf.Clamp(0.8f + 0.1f * (float)base.contraption.m_enginesAmount, 0f, 1f);
 		}
-		else if (!this.m_running && this.loopingSound)
+		else if (!m_running)
 		{
-			//this.audioManager.RemoveCombinedLoopingEffect(this.m_engineSound, this.loopingSound);
-			//this.loopingSound = null;
+			//audioManager.RemoveCombinedLoopingEffect(m_engineSound, loopingSound);
+			foreach(GameObject engine in engines){
+			engine.GetComponent<AudioSource>().Stop();
+			}
 		}
-		if (this.m_running)
+		if (m_running && !m_engineSound.GetComponent<AudioSource>().isPlaying)
 		{
-			this.PlayEngineAnimation();
+			foreach(GameObject engine in engines){
+			engine.GetComponent<AudioSource>().Play();
+			PlayEngineAnimation();
+			}
 		}
 	}
 
@@ -123,7 +141,7 @@ public class Engine : BasePart
 	{
 		if (Time.deltaTime > 0f)
 		{
-			this.m_visualizationPart.localPosition = this.m_visualizationPartPosition + (Vector3)UnityEngine.Random.insideUnitCircle * 0.1f;
+			m_visualizationPart.localPosition = m_visualizationPartPosition + (Vector3)UnityEngine.Random.insideUnitCircle * 0.1f;
 		}
 	}
 
@@ -131,37 +149,62 @@ public class Engine : BasePart
 	{
 		if (base.contraption.ActivateAllPoweredParts(base.ConnectedComponent) == 0)
 		{
-			this.SetEnabled(!this.m_running);
+			SetEnabled(!m_running);
 		}
 	}
 
 	public override void SetEnabled(bool enabled)
 	{
-		this.m_running = (enabled && !this.m_engineBroken);
-		if (this.smokeEmitter != null)
+		m_running = (enabled && !m_engineBroken);
+		if (smokeEmitter != null)
 		{
-			if (this.m_running)
+			if (m_running)
 			{
-				this.smokeEmitter.Play();
+				smokeEmitter.Play();
 			}
 			else
 			{
-				this.smokeEmitter.Stop();
+				smokeEmitter.Stop();
 			}
 		}
-		if (this.flameEmitter != null)
+		if (flameEmitter != null)
 		{
-			if (this.m_running)
+			if (m_running)
 			{
-				this.flameEmitter.Play();
+				flameEmitter.Play();
 			}
 			else
 			{
-				this.flameEmitter.Stop();
+				flameEmitter.Stop();
 			}
 		}
 	}
-
+	
+		GameObject[] FindGameObjectsWithName(string name){
+			/*GameObject[] engs;
+			engs = GetComponentsInChildren<GameObject>();
+         int FluentNumber = 0;
+		  GameObject[] arr=new GameObject[engs.Length];
+         for (int i=0; i<engs.Length; i++) {
+             if (engs[i].name == name) {
+                 arr [FluentNumber] = engs[i];
+                 FluentNumber++;
+             }
+         }
+         Array.Resize (ref arr, FluentNumber);
+         return arr;*/
+         int a = GetComponentsInChildren<Transform>().Length;//TOO SLOW
+         GameObject[] arr=new GameObject[a];
+         int FluentNumber = 0;
+         for (int i=0; i<a; i++) {
+             if (GetComponentsInChildren<Transform>()[i].gameObject.name == name) {
+                 arr [FluentNumber] = GetComponentsInChildren<Transform>()[i].gameObject;
+                 FluentNumber++;
+             }
+         }
+         Array.Resize (ref arr, FluentNumber);
+         return arr;
+     }
 	public bool m_running;
 
 	private Transform m_visualizationPart;

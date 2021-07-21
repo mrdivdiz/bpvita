@@ -1,5 +1,6 @@
 ﻿using Spine.Unity;
 using System;
+using System.IO;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -302,7 +303,12 @@ public class LevelComplete : WPFMonoBehaviour
             AudioSource starAudio = null;
             if (challenge1Completed)
             {
-                starAudio = WPFMonoBehaviour.gameData.commonAudioCollection.starEffects[starSoundIndex];
+				AudioSource win_snd = new GameObject("win_star").AddComponent<AudioSource>();
+				win_snd.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "star_"+starSoundIndex);
+				win_snd.GetComponent<AudioSource>().loop = false;
+				win_snd.GetComponent<AudioSource>().volume = 1f;
+				win_snd.GetComponent<AudioSource>().Play();
+                //starAudio = WPFMonoBehaviour.gameData.commonAudioCollection.starEffects[starSoundIndex];
                 starSoundIndex++;
             }
             base.StartCoroutine(this.PlayOldStarEffects(this.m_objectiveTwo, this.m_starTwo, secondStarTime, challenge1Completed, starAudio, "StarAppearing2"));
@@ -400,7 +406,12 @@ public class LevelComplete : WPFMonoBehaviour
             AudioSource starAudio2 = null;
             if (challenge2Completed)
             {
-                starAudio2 = WPFMonoBehaviour.gameData.commonAudioCollection.starEffects[starSoundIndex];
+				AudioSource win_snd = new GameObject("win_star").AddComponent<AudioSource>();
+				win_snd.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "star_"+starSoundIndex);
+				win_snd.GetComponent<AudioSource>().loop = false;
+				win_snd.GetComponent<AudioSource>().volume = 1f;
+				win_snd.GetComponent<AudioSource>().Play();
+                //starAudio2 = WPFMonoBehaviour.gameData.commonAudioCollection.starEffects[starSoundIndex];
                 starSoundIndex++;
             }
             base.StartCoroutine(this.PlayOldStarEffects(this.m_objectiveThree, this.m_starThree, thirdStarTime, challenge2Completed, starAudio2, "StarAppearing3"));

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.IO;
 
 public class GoalBox : Goal
 {
@@ -80,6 +81,14 @@ public class GoalBox : Goal
 		{
 			return;
 		}
+		AudioSource win_snd = new GameObject("win_snd").AddComponent<AudioSource>();
+			//win_snd.gameObject.tag = "m_engineSetup";
+					win_snd.GetComponent<AudioSource>().clip = (AudioClip) Resources.Load("AudioAdd" + Path.DirectorySeparatorChar + "win_snd");
+				//win_snd.GetComponent<AudioSource>().Play();
+				win_snd.GetComponent<AudioSource>().loop = false;
+				win_snd.GetComponent<AudioSource>().volume = 1f;
+				win_snd.GetComponent<AudioSource>().Play();
+				
 		WPFMonoBehaviour.levelManager.NotifyGoalReachedByPart(part.m_partType);
 		if (WPFMonoBehaviour.levelManager.PlayerHasRequiredObjects())
 		{
