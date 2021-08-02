@@ -8,14 +8,17 @@ public class WPFPrefs : UnityEngine.Object
 {
 	public static void WriteGhostPlayerData(string filename, GhostPlayer gp)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(GhostPlayer));
 		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + "/" + filename, FileMode.Create);
 		xmlSerializer.Serialize(fileStream, gp);
 		fileStream.Close();
+		#endif
 	}
 
 	public static GhostPlayer ReadGhostPlayerData(string filename)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(GhostPlayer));
 		GhostPlayer result = new GhostPlayer();
 		try
@@ -28,6 +31,10 @@ public class WPFPrefs : UnityEngine.Object
 		{
 		}
 		return result;
+		#else
+		GhostPlayer result = new GhostPlayer();
+		return result;
+		#endif
 	}
 
 	public static string ContraptionFileName(string levelName)
@@ -38,6 +45,7 @@ public class WPFPrefs : UnityEngine.Object
 
 	public static void SaveContraptionDataset(string levelName, ContraptionDataset cds)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		MemoryStream memoryStream = new MemoryStream();
 		StreamWriter textWriter = new StreamWriter(memoryStream, Encoding.UTF8);
@@ -51,10 +59,12 @@ public class WPFPrefs : UnityEngine.Object
 		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + "/" + str, FileMode.Create);
 		fileStream.Write(array, 0, array.Length);
 		fileStream.Close();
+		#endif
 	}
 
 	public static void SaveLevelBluePrint(string levelName, ContraptionDataset cds, bool isSuperBlueprint = false, int superBluePrintIndex = 0)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		MemoryStream memoryStream = new MemoryStream();
 		StreamWriter textWriter = new StreamWriter(memoryStream, Encoding.UTF8);
@@ -68,10 +78,12 @@ public class WPFPrefs : UnityEngine.Object
 		FileStream fileStream = new FileStream("ux0:" + Path.DirectorySeparatorChar + "data" + path2, FileMode.Create);
 		fileStream.Write(array, 0, array.Length);
 		fileStream.Close();
+		#endif
 	}
 
 	public static ContraptionDataset LoadContraptionDataset(string levelName)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		ContraptionDataset result = new ContraptionDataset();
 		string str = WPFPrefs.ContraptionFileName(levelName);
@@ -94,10 +106,15 @@ public class WPFPrefs : UnityEngine.Object
 		{
 		}
 		return result;
+		#else
+		ContraptionDataset result = new ContraptionDataset();
+		return result;
+		#endif
 	}
 
 	public static ContraptionDataset LoadContraptionDataset(TextAsset textAsset)
 	{
+		#if !UNITY_EDITOR
 		XmlSerializer xmlSerializer = new XmlSerializer(typeof(ContraptionDataset));
 		ContraptionDataset result = new ContraptionDataset();
 		try
@@ -111,6 +128,10 @@ public class WPFPrefs : UnityEngine.Object
 		}
 		//ContraptionDataset result = new ContraptionDataset();
 		return result;
+		#else
+		ContraptionDataset result = new ContraptionDataset();
+		return result;
+		#endif
 	}
 
 	private static CryptoUtility m_crypto = new CryptoUtility("3b91A049Ca7HvSjhxT35");

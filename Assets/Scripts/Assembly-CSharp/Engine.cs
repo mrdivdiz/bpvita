@@ -112,28 +112,53 @@ public class Engine : BasePart
 			
 		}
 		engines = FindGameObjectsWithName("FUCKING_ENGINE_228AE");
+		if(engines.Length > 2){
+		for(int i = 2; i < engines.Length; i++)
+			{
+      Destroy(engines[i].gameObject);
+			}
+		}
 	}
-
 	private void Update()
 	{
 		if (m_running && !loopingSound)
 		{
 			//loopingSound = audioManager.SpawnCombinedLoopingEffect(m_engineSound, base.gameObject.transform);
 			//loopingSound.GetComponent<AudioSource>().pitch = Mathf.Clamp(0.8f + 0.1f * (float)base.contraption.m_enginesAmount, 0f, 1f);
+			
 		}
 		else if (!m_running)
 		{
 			//audioManager.RemoveCombinedLoopingEffect(m_engineSound, loopingSound);
-			foreach(GameObject engine in engines){
-			engine.GetComponent<AudioSource>().Stop();
+			//foreach(GameObject engine in engines){
+			//engine.GetComponent<AudioSource>().Stop();
+			//}
+			switch(engines.Length){
+				case 1:
+				engines[0].GetComponent<AudioSource>().Stop();
+				break;
+				case 2:
+				engines[0].GetComponent<AudioSource>().Stop();
+				engines[1].GetComponent<AudioSource>().Stop();
+				break;
 			}
 		}
 		if (m_running && !m_engineSound.GetComponent<AudioSource>().isPlaying)
 		{
-			foreach(GameObject engine in engines){
-			engine.GetComponent<AudioSource>().Play();
-			PlayEngineAnimation();
+			//foreach(GameObject engine in engines){
+			//engine.GetComponent<AudioSource>().Play();
+			//PlayEngineAnimation();
+			//}
+			switch(engines.Length){
+				case 1:
+				engines[0].GetComponent<AudioSource>().Play();
+				break;
+				case 2:
+				engines[0].GetComponent<AudioSource>().Play();
+				engines[1].GetComponent<AudioSource>().Play();
+				break;
 			}
+			PlayEngineAnimation();
 		}
 	}
 
